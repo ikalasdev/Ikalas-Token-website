@@ -16,7 +16,7 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.mainTitle}>
           <Image className={styles.imgHome} src="/images/logo.png" alt="Kik" width={90} height={90}/>
-          
+
           <h1 className={styles.title}>
           KiK Token
           </h1>
@@ -49,6 +49,14 @@ export default function Home() {
             Ikalas rewards the users for their actions by giving them a Kik token when their tools are used by the community.<br/>
             As a developpement platform, Ikalas will allow developpers to use the Ikalas tools in there code with an API that is not available now.
           </p>
+        </div>
+
+        <div className={styles.FullWidthRectangle}>
+          <h3>Carré</h3>
+          <p>
+            lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br/> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br/> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br/> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <button className={styles.button}>Discover more</button>
         </div>
       </main>
 

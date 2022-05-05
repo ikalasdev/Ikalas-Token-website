@@ -1,5 +1,5 @@
 .container {
-  padding: 0 2rem;
+  padding: 0 0rem;
   background-color: #1D1D1D;
 }
 
@@ -134,8 +134,7 @@
   height: 100%;
   object-fit: cover;
   border-radius: 25%;
-  margin-left: 100%;
-  
+
 }
 
 .mainTitle
@@ -170,4 +169,31 @@
   display: flex;
   justify-content: flex-start;
   
+}
+
+.FullWidthRectangle
+{
+  margin-top: 5rem;
+  width: 100%;
+  background-image: url('https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg');
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.button{
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  width: 10%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2A58E1;
+  border-radius: 25px;
+  border-color: #eaeaea;
+
+
 }
