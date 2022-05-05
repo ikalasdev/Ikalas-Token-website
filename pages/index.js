@@ -1,5 +1,7 @@
+import { imageConfigDefault } from 'next/dist/shared/lib/image-config'
 import Head from 'next/head'
 import Image from 'next/image'
+
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -12,58 +14,28 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
+        <div className={styles.mainTitle}>
+          <h1 className={styles.title}>
+          KiK Token
+        </h1>
+        <Image className={styles.imgHome} src="/images/logo.png" alt="Kik" width={90} height={90}/>
+        </div>
+        
+        <h2 className={styles.slogan}>
           Avoid complexity,<br/>
           welcome simplicity
-        </h1>
+        </h2>
 
-        <p className={styles.description}>
-          Created by
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+          <div className={`${styles.card} ${styles.questions}`}>
+            <h3>
+              What is the Kik token ?
+            </h3>
+            <p className={styles.textCenter}>Kik is a cryptocurrency used in the platform <a href="https://ikalas.com/app"></a>. The Kik token is fully tradable and allow the owners to get discount and specific
+            pivileges on the platform.</p>
+          </div>
+            
       </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
     </div>
   )
 }

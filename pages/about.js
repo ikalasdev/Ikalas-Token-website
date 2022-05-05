@@ -1,10 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Navbar from '../component/Navbar'
 import styles from '../styles/Home.module.css'
 
-
-
-export default function Company() {
+export default function About() {
 return (
     <div className={styles.container}>
         <Head>
@@ -14,7 +13,7 @@ return (
         </Head>
         <main className={styles.main}>
             <h1 className={styles.title}>
-                The Ikalas Corporation
+                About the Ikalas Project
             </h1>
         </main>
     </div>

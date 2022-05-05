@@ -115,3 +115,37 @@
     flex-direction: column;
   }
 }
+
+.questions
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.imgHome
+{
+  background-image: "url('https://ikalas.com/logo.png');";
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25%;
+}
+
+.mainTitle
+{
+  display: flex;
+  justify-content: center;
+}
+
+.slogan{
+  display: flex;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.textCenter{
+  text-align: center;
+}
