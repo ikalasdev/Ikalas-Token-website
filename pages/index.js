@@ -15,10 +15,12 @@ export default function Home() {
 
       <main className={styles.main}>
         <div className={styles.mainTitle}>
+          <Image className={styles.imgHome} src="/images/logo.png" alt="Kik" width={90} height={90}/>
+          
           <h1 className={styles.title}>
           KiK Token
-        </h1>
-        <Image className={styles.imgHome} src="/images/logo.png" alt="Kik" width={90} height={90}/>
+          </h1>
+          
         </div>
         
         <h2 className={styles.slogan}>
@@ -26,14 +28,28 @@ export default function Home() {
           welcome simplicity
         </h2>
 
-          <div className={`${styles.card} ${styles.questions}`}>
-            <h3>
-              What is the Kik token ?
-            </h3>
-            <p className={styles.textCenter}>Kik is a cryptocurrency used in the platform <a href="https://ikalas.com/app"></a>. The Kik token is fully tradable and allow the owners to get discount and specific
-            pivileges on the platform.</p>
-          </div>
-            
+        <div className={` ${styles.questions}`}>
+          <h3 className={styles.LeftSide}>
+            What is the Kik token ?
+          </h3>
+          <p className={styles.LeftSide}>
+            Kik is a cryptocurrency used in the platform.<br/>
+            The Kik token is fully tradable and allow the owners to get discount and specific
+            pivileges on the platform.
+          </p>
+        </div>
+
+        <div className={` ${styles.questions}`}>
+          <h3 className={styles.RightSide}>
+            What is the Ikalas platform ?
+          </h3>
+          <p className={styles.RightSide}>
+            The Ikalas platform is a platform that allows the users to use diverse tools.<br/>
+            The platform is fully decentralized and allows the users to create their own tools and to share them.<br/>
+            Ikalas rewards the users for their actions by giving them a Kik token when their tools are used by the community.<br/>
+            As a developpement platform, Ikalas will allow developpers to use the Ikalas tools in there code with an API that is not available now.
+          </p>
+        </div>
       </main>
 
     </div>

@@ -12,5 +12,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-grow: 1;
+}
+
+.media { 
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 20rem;
+    
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
