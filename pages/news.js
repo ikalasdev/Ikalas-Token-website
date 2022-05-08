@@ -21,6 +21,14 @@ return (
             <h1 className={styles.title}>
                 News about the platform
             </h1>
+            <div className={styles.news}>
+                <ul>
+                    <li>05/05/2022 - Début de création du site vitrine KiK token</li>
+                    <li>05/05/2022 - Début de création du site vitrine KiK token</li>
+                    <li>05/05/2022 - Début de création du site vitrine KiK token</li>
+                    <li>05/05/2022 - Début de création du site vitrine KiK token</li>
+                </ul>
+            </div>
         </main>
     </div>
     )

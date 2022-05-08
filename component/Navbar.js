@@ -7,11 +7,14 @@ const Navbar = () => {
       <Link href='/'>
         <a className={stylesNav.linkNav}>Home</a>
       </Link>
-      <Link href='/company'>
-        <a className={stylesNav.linkNav}>The Platform</a>
-      </Link>
       <Link href='/news'>
         <a className={stylesNav.linkNav}>News</a>
+      </Link>
+      <Link href='/swap'>
+        <a className={stylesNav.linkNav}>Swap</a>
+      </Link>
+      <Link href='/roadmap'>
+        <a className={stylesNav.linkNav}>Roadmap</a>
       </Link>
       <Link href='/about'>
         <a className={stylesNav.linkNav}>About</a>
