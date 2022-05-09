@@ -1,6 +1,7 @@
 import Navbar from '../component/Navbar'
 import Footer from '../component/Footer'
 import Login from '../component/Login'
+import Header from '../component/Header'
 import { ThirdwebWeb3Provider } from "@3rdweb/hooks";
 import "regenerator-runtime/runtime";
 import '../styles/globals.css'
@@ -21,7 +22,7 @@ function MyApp({ Component, pageProps }) {
       
       <Navbar/>
       <Component {...pageProps} />
-      <Login />
+      <Header/>
       <Footer/>
     </ThirdwebWeb3Provider>
   )

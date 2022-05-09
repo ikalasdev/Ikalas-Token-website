@@ -1,25 +1,36 @@
 import Link from 'next/link';
-import stylesNav from '../styles/Navbar.module.css';
+import Login from './Login';
 
 const Navbar = () => {
   return (
-    <div className={stylesNav.navbar}>
-      <Link href='/'>
-        <a className={stylesNav.linkNav}>Home</a>
-      </Link>
-      <Link href='/news'>
-        <a className={stylesNav.linkNav}>News</a>
-      </Link>
-      <Link href='/swap'>
-        <a className={stylesNav.linkNav}>Swap</a>
-      </Link>
-      <Link href='/roadmap'>
-        <a className={stylesNav.linkNav}>Roadmap</a>
-      </Link>
-      <Link href='/about'>
-        <a className={stylesNav.linkNav}>About</a>
-      </Link>
-    </div>
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <div className="container-fluid">
+        <a className="navbar-brand" href="#">KIK</a>
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <li className="nav-item">
+              <a className="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/news">News</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/swap">Swap</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/roadmap">Roadmap</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/about">About</a>
+            </li>
+          </ul>
+          <Login/>
+        </div>
+      </div>
+    </nav>
   );
 };
 
