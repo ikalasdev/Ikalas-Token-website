@@ -41,7 +41,7 @@ export default function Home() {
   return (
     <div >
       <main>
-        <section className="pt-12 pt-md-13 bg-gray-300">
+        <section className="pt-12 pt-md-13 bg-grey-300">
           <div >
             <Image src="/images/logo.png" alt="Kik" width={90} height={90} />
             <h1 >
@@ -55,7 +55,7 @@ export default function Home() {
           </h2>
         </section>
 
-        <section className="pt-12 pt-md-13 bg-gray-300">
+        <section className="pt-12 pt-md-13 bg-primary">
           <div>
             <h2>
               What is the KIK ?
@@ -68,7 +68,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="pt-12 pt-md-13 bg-gray-300">
+        <section className="pt-12 pt-md-13 bg-primary">
           <div>
             <h3>
               What is the Ikalas platform ?
@@ -82,7 +82,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="pt-12 pt-md-1 bg-gray-300">
+        <section className="pt-12 pt-md-1 bg-primary">
           <div>
             <h3>
               Informations about the KIK
@@ -96,8 +96,9 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="pt-1 pt-md-5 bg-dark text-center text-primary">
-          <h3>Statistique</h3>
+        <section className="pt-1 pt-md-5 bg-primary text-center text-dark">
+          <h3 className='text-uppercase text-light'>Statistiques</h3>
+          <div className="container">
           <div className="d-flex justify-content-between">
             <div className="card mx-2 bg-light">
               <h4>
@@ -136,20 +137,19 @@ export default function Home() {
 
 
           <button href ="https://bscscan.com/address/0x28E41ccB451F0E813403Cc91Cc49B0ca8178F3f2" 
-          className='btn btn-outline-dark bg-dark text-light px-2 py-1 border-2 border-light rounded my-5'
+          className='btn btn-outline-primary bg-primary text-light px-2 py-1 border-2 border-light rounded my-5'
           >
             Discover more
           </button>
+          </div>
         </section>
 
-        <section className="pt-12 pt-md-13 bg-gray-100">
+        <section className="pt-1 pt-md-5 bg-primary text-center text-dark">
           <div>
             <h3>Token Distribution</h3>
-            <div>
+            <div width="20px" height="20px">
               <Doughnut
                 data={data}
-                width={200}
-                height={200}
               />
             </div>
           </div>
