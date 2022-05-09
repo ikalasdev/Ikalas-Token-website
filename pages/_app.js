@@ -1,10 +1,11 @@
 import Navbar from '../component/Navbar'
 import Footer from '../component/Footer'
 import Login from '../component/Login'
+import Script from 'next/script'
 import Header from '../component/Header'
 import { ThirdwebWeb3Provider } from "@3rdweb/hooks";
 import "regenerator-runtime/runtime";
-import '../styles/globals.css'
+import "../public/assets/css/custom.css";
 
 
 function MyApp({ Component, pageProps }) {
@@ -24,7 +25,13 @@ function MyApp({ Component, pageProps }) {
       <Component {...pageProps} />
       <Header/>
       <Footer/>
+      
+      <Script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'/>
+      <Script src="./assets/js/vendor.bundle.js"/>
+      <Script src="./assets/js/theme.bundle.js"/>
     </ThirdwebWeb3Provider>
+
+    
   )
 }
 

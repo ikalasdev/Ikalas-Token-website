@@ -1,0 +1,28 @@
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #198754;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.glowing-circle {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #198754;
+    -webkit-animation: glowing 1s ease-in-out infinite alternate;
+    -moz-animation: glowing 1s ease-in-out infinite alternate;
+    animation: glowing 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glowing {
+    from {
+        box-shadow: 0 0 5px #1bbb71, 0 0 15px #1bbb71, 0 0 20px #1bbb71, 0 0 30px #1bbb71;
+    }
+
+    to {
+        box-shadow: 0 0 15px #1bbb71, 0 0 25px #1bbb71, 0 0 30px #1bbb71, 0 0 400px #1bbb71;
+    }
+}
+  
+
