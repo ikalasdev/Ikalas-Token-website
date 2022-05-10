@@ -11,7 +11,7 @@ const Login = () => {
         <div 
         className="btn btn-outline-dark d-flex align-items-center text-light px-2 py-1 border-2 border-light rounded"
         >
-          <span class="glowing-circle"></span>
+          <span class="glowing-circle mx-1"></span>
           <span className="mx-2">Connected</span>
         </div>
       ) : (
