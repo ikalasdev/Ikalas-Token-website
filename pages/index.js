@@ -61,30 +61,83 @@ export default function Home() {
 
 
         <section className="bg-gradient-dark-black py-5 pt-md-13 text-light" id="KIK">
-          <div>
+          <div className='container text-center'>
             <h2>
               What is the KIK ?
             </h2>
             <p>
-              Kik is a BEP-20 token used in the platform Ikalas.com as the front door of the premium access.<br />
+              KIK is a BEP-20 token used in the platform Ikalas.com as the front door of the premium access.<br />
               The KIK token is fully tradable and allow the owners to get specific pivileges on the platform.<br />
               The KIK is also a new way to make income from your developping skills by creating usefull tools for the community.
             </p>
           </div>
         </section>
 
-        <section className="py-8 bg-black text-light" id="Infos">
-          <div>
-            <h3>
-              Informations about the KIK
-            </h3>
-            <p>
-              The KIK is a non mintable token that is fully tradable.<br />
-              It counts 100 million tokens and was created on the binance smartchain.<br />
-              This token is also earnable by the community (learn more about it on the plateform Ikalas).<br />
+        <section className="py-5 bg-black text-dark" id="Infos">
 
-            </p>
+          <div className="container">
+            <div className="row">
+
+              <div className="card bg-dark rounded-3 mx-2 col-sm">
+                <div className="card-body p-5 pb-0 my-auto d-flex justify-content-center h-40">
+                  <h2 className="card-title text-white">
+                    <img src="/images/token.png" alt="Kik" width={90} height={90} />
+                  </h2>
+                </div>
+                <div className="card-body p-5 h-50">
+
+
+                  <h3 className="fw-bold text-white">
+                    Non-Mintable
+                  </h3>
+
+                  <p className="text-muted mb-0">
+                    We can't create new KIK token, the total amount is immutable.
+                  </p>
+
+                </div>
+              </div>
+
+              <div className="card bg-dark rounded-3 mx-2 col-sm">
+                <div className="card-body p-5 pb-0 my-auto d-flex justify-content-center h-40">
+                  <h2 className="card-title text-white">
+                  <img src="/images/gold-ingots.png" alt="Kik" width={90} height={90} />
+                  </h2>
+                </div>
+                <div className="card-body p-5 h-50">
+
+                  <h3 className="fw-bold text-white">
+                    Supply
+                  </h3>
+
+                  <p className="text-muted mb-0">
+                    The KIK was created on the BSC blockchain with a max supply of 100 000 000 KIK.
+                  </p>
+
+                </div>
+              </div>
+
+              <div className="card  bg-dark rounded-3 mx-2 col-sm">
+                <div className="card-body d-flex justify-content-center h-40" >
+                  <h2 className="card-title text-white">
+                  <img src="/images/withdraw.png" alt="Kik" width={90} height={90} />
+                  </h2>
+                </div>
+                <div className="card-body p-5 h-50">
+                  <h3 className="fw-bold text-white">
+                    Earnable
+                  </h3>
+                  <p className="text-muted mb-0">
+                    The KIK is earnable by the community who serve the platform.
+                  </p>
+
+                </div>
+              </div>
+            </div>
           </div>
+
+
+
         </section>
 
         <section className="bg-black py-8 py-md-15 text-light" id="Ikalas">
@@ -149,16 +202,19 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-10 pt-md-15 bg-black text-center text-dark">
+        <section className="py-2 pt-md-15 bg-black text-center text-dark">
           <div>
             <h3 className='text-uppercase text-light'>Token Distribution</h3>
-            <Doughnut className=''
-              data={data}
-              width={100}
-              height={100}
-            />
+            <p className='text-light'>futur graphique (enlevé parce que ca prend de la place)</p>
           </div>
         </section>
+
+        <section className="py-10 pt-md-15 bg-black text-center text-dark">
+          <div>
+            <h3 className='text-uppercase text-light'>Roadmap</h3>
+          </div>
+        </section>
+
         <div className="bg-black">
           <div className="container border-top border-gray-900-50"></div>
         </div>
