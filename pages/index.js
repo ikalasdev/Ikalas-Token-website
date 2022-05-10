@@ -43,13 +43,13 @@ export default function Home() {
       <main>
         <section className="mt-n11 pt-12 pb-8 pt-md-14 pb-md-11 bg-black bg-pattern-2 text-center">
           <div >
-            <Image src="/images/logo.png" className='rounded-circle' alt="Kik" width={120} height={120} />
+            <Image src="/images/logo_bgLess.png" className='rounded-circle' alt="Kik" width={120} height={120} />
             <h1 >
               KIK
             </h1>
           </div>
 
-          <h2 className='text-primary'>
+          <h2 className='text-light'>
             Avoid complexity,<br />
             welcome simplicity
           </h2>
@@ -89,7 +89,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="pt-12 pt-md-1 bg-primary">
+        <section className="bg-black text-light">
           <div>
             <h3>
               Informations about the KIK
@@ -103,7 +103,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="pt-1 pt-md-5 bg-primary text-center text-dark">
+        <section className="pt-1 pt-md-5 bg-black text-center text-dark">
           <h3 className='text-uppercase text-light'>Statistiques</h3>
           <div className="container">
             <div className="d-flex justify-content-between">
@@ -151,9 +151,9 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="pt-1 pt-md-5 bg-primary text-center text-dark">
+        <section className="pt-1 pt-md-5 bg-black text-center text-dark">
           <div>
-            <h3>Token Distribution</h3>
+            <h3 className='text-uppercase text-light'>Token Distribution</h3>
             <div width="20px" height="20px">
               <Doughnut
                 data={data}
@@ -161,6 +161,9 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <div className="bg-black">
+          <div className="container border-top border-gray-900-50"></div>
+        </div>
       </main>
 
     </div>

@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg navbar-dark border-bottom-1 border-light d-flex justify-content-between">
         <div className='mx-5 d-flex align-item-center'>
           <Link href="/" className=''>
-            <Image src="/images/logo.png" className='rounded-circle' width={50} height={50} />
+            <Image src="/images/logo_bgLess.png" className='rounded-circle' width={50} height={50} />
           </Link>
           <Link href="/">
             <span className="navbar-brand mx-2 mt-1" width={50} height={50}>KIK</span>
