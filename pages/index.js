@@ -41,21 +41,28 @@ export default function Home() {
   return (
     <div >
       <main>
-        <section className="pt-12 pt-md-13 bg-grey-300">
+        <section className="mt-n11 pt-12 pb-8 pt-md-14 pb-md-11 bg-black bg-pattern-2 text-center">
           <div >
-            <Image src="/images/logo.png" alt="Kik" width={90} height={90} />
+            <Image src="/images/logo.png" className='rounded-circle' alt="Kik" width={120} height={120} />
             <h1 >
               KIK
             </h1>
           </div>
 
-          <h2>
+          <h2 className='text-primary'>
             Avoid complexity,<br />
             welcome simplicity
           </h2>
         </section>
 
-        <section className="pt-12 pt-md-13 bg-primary">
+
+        <div class="position-relative">
+          <div class="shape shape-bottom shape-fluid-x text-dark">
+            <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"></path></svg>      </div>
+        </div>
+
+
+        <section className="bg-gradient-dark-black py-8 py-md-11 text-light">
           <div>
             <h2>
               What is the KIK ?
@@ -68,7 +75,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="pt-12 pt-md-13 bg-primary">
+        <section className="bg-black py-8 py-md-11 text-light">
           <div>
             <h3>
               What is the Ikalas platform ?
@@ -99,48 +106,48 @@ export default function Home() {
         <section className="pt-1 pt-md-5 bg-primary text-center text-dark">
           <h3 className='text-uppercase text-light'>Statistiques</h3>
           <div className="container">
-          <div className="d-flex justify-content-between">
-            <div className="card mx-2 bg-light">
-              <h4>
-                Total number of holders :
-              </h4>
+            <div className="d-flex justify-content-between">
+              <div className="card mx-2 bg-light">
+                <h4>
+                  Total number of holders :
+                </h4>
 
-              <p>
-                <span>
-                  {nbholder}
-                </span>
-              </p>
+                <p>
+                  <span>
+                    {nbholder}
+                  </span>
+                </p>
+              </div>
+
+              <div className="card mx-2">
+                <h4>
+                  Total number of transactions :
+                </h4>
+                <p>
+                  <span>
+                    {nbtransaction}
+                  </span>
+                </p>
+              </div>
+
+              <div className="card mx-2">
+                <h4>
+                  Price :
+                </h4>
+                <p>
+                  <span>
+                    {tokenPrice}
+                  </span>
+                </p>
+              </div>
             </div>
 
-            <div className="card mx-2">
-              <h4>
-                Total number of transactions :
-              </h4>
-              <p>
-                <span>
-                  {nbtransaction}
-                </span>
-              </p>
-            </div>
 
-            <div className="card mx-2">
-              <h4>
-                Price :
-              </h4>
-              <p>
-                <span>
-                  {tokenPrice}
-                </span>
-              </p>
-            </div>
-          </div>
-
-
-          <button href ="https://bscscan.com/address/0x28E41ccB451F0E813403Cc91Cc49B0ca8178F3f2" 
-          className='btn btn-outline-primary bg-primary text-light px-2 py-1 border-2 border-light rounded my-5'
-          >
-            Discover more
-          </button>
+            <button href="https://bscscan.com/address/0x28E41ccB451F0E813403Cc91Cc49B0ca8178F3f2"
+              className='btn btn-outline-primary bg-primary text-light px-2 py-1 border-2 border-light rounded my-5'
+            >
+              Discover more
+            </button>
           </div>
         </section>
 

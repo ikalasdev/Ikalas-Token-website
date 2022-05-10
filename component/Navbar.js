@@ -4,7 +4,7 @@ import Login from './Login';
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark border-bottom-1 border-light d-flex justify-content-between">
+    <nav className="navbar navbar-expand-lg navbar-dark border-bottom-1 border-light d-flex justify-content-between">
         <div className='mx-5 d-flex align-item-center'>
           <Link href="/" className=''>
             <Image src="/images/logo.png" className='rounded-circle' width={50} height={50} />
