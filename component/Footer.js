@@ -3,7 +3,7 @@ import stylesFooter from '../styles/footer.module.css';
 
 const Footer = () => {
   return (
-    <footer className='py- py-md-8 bg-black'>
+    <footer className='bg-gradient-dark-black py-5 pt-md-8 text-light'>
 
       <div className="container">
         <div className="d-flex justify-content-center text-center">

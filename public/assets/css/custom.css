@@ -39,14 +39,14 @@ html {
 }
 .main-timeline .timeline{
     width: calc(50% + 58px);
-    border-top: 2px solid #fefee2;
+    border-top: 2px solid #ffffff;
     float: left;
     position: relative;
     z-index: 1;
 }
 .main-timeline .timeline:before{
     content: "";
-    background: #fefee2;
+    background: #ffffff;
     width: 10px;
     height: 10px;
     border-radius: 50px;
@@ -55,7 +55,7 @@ html {
     right: 0;
 }
 .main-timeline .timeline-content{
-    color: #fefee2;
+    color: #ffffff;
     text-align: center;
     padding: 15px 80px 15px 10px;
     display: block;
