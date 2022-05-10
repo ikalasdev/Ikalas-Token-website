@@ -43,22 +43,20 @@ export default function Home() {
       <main>
         <section className="mt-n11 pt-12 pb-8 pt-md-14 pb-md-11 bg-black bg-pattern-2 text-center">
           <div >
-            <Image src="/images/logo_bgLess.png" className='rounded-circle' alt="Kik" width={120} height={120} />
-            <h1 >
-              KIK
-            </h1>
+            <Image src="/images/logo_bgLess_border.png" alt="Kik" width={120} height={115} />
           </div>
 
-          <h2 className='text-light'>
+          <h2 className='text-light mt-5'>
             Avoid complexity,<br />
             welcome simplicity
           </h2>
         </section>
 
 
-        <div class="position-relative">
-          <div class="shape shape-bottom shape-fluid-x text-dark">
-            <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"></path></svg>      </div>
+        <div className="position-relative">
+          <div className="shape shape-bottom shape-fluid-x text-dark">
+            <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"></path></svg>
+          </div>
         </div>
 
 
