@@ -3,6 +3,9 @@ import Image from 'next/image';
 import Login from './Login';
 
 const Navbar = () => {
+
+
+
   return (
     <nav className="navbar navbar-expand-lg navbar-dark border-bottom-1 border-light d-flex justify-content-between">
       <div className='mx-5 d-flex align-item-center'>
@@ -14,20 +17,18 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="/">Home</a>
+              <a className="nav-link" aria-current="page" href="#KIK">What's KIK?</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/news">News</a>
+              <a className="nav-link" href="#Ikalas">What's Ikalas?</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/swap">Swap</a>
+              <a className="nav-link" href="#Stats">Statistics</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/roadmap">Roadmap</a>
+              <a className="nav-link" href="#Roadmap">Roadmap</a>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/about">About</a>
-            </li>
+            
           </ul>
         </div>
       </div>

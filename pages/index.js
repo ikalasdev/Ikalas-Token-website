@@ -60,7 +60,7 @@ export default function Home() {
         </div>
 
 
-        <section className="bg-gradient-dark-black py-8 py-md-11 text-light">
+        <section className="bg-gradient-dark-black py-5 pt-md-13 text-light" id="KIK">
           <div>
             <h2>
               What is the KIK ?
@@ -73,21 +73,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="bg-black py-8 py-md-11 text-light">
-          <div>
-            <h3>
-              What is the Ikalas platform ?
-            </h3>
-            <p>
-              The Ikalas platform is a platform that allows the users to use diverse tools.<br />
-              The platform is fully decentralized and allows the users to create their own tools and to share them.<br />
-              Ikalas rewards the users for their actions by giving them a Kik token when their tools are used by the community.<br />
-              As a developpement platform, Ikalas will allow developpers to use the Ikalas tools in there code with an API that is not available now.
-            </p>
-          </div>
-        </section>
-
-        <section className="bg-black text-light">
+        <section className="py-8 bg-black text-light" id="Infos">
           <div>
             <h3>
               Informations about the KIK
@@ -101,7 +87,21 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="pt-1 pt-md-5 bg-black text-center text-dark">
+        <section className="bg-black py-8 py-md-15 text-light" id="Ikalas">
+          <div>
+            <h3>
+              What is the Ikalas platform ?
+            </h3>
+            <p>
+              The Ikalas platform is a platform that allows the users to use diverse tools.<br />
+              The platform is fully decentralized and allows the users to create their own tools and to share them.<br />
+              Ikalas rewards the users for their actions by giving them a Kik token when their tools are used by the community.<br />
+              As a developpement platform, Ikalas will allow developpers to use the Ikalas tools in there code with an API that is not available now.
+            </p>
+          </div>
+        </section>
+
+        <section className="pt-1 pt-md-5 bg-black text-center text-dark" id="Stats">
           <h3 className='text-uppercase text-light'>Statistiques</h3>
           <div className="container">
             <div className="d-flex justify-content-between">
@@ -149,14 +149,14 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="pt-1 pt-md-5 bg-black text-center text-dark">
+        <section className="py-10 pt-md-15 bg-black text-center text-dark">
           <div>
             <h3 className='text-uppercase text-light'>Token Distribution</h3>
-            <div width="20px" height="20px">
-              <Doughnut
-                data={data}
-              />
-            </div>
+            <Doughnut className=''
+              data={data}
+              width={100}
+              height={100}
+            />
           </div>
         </section>
         <div className="bg-black">

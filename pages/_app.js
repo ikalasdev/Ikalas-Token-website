@@ -20,10 +20,9 @@ function MyApp({ Component, pageProps }) {
       supportedChainIds={supportedChainIds}
       connectors={connectors}
     >
-      
+      <Header/>
       <Navbar/>
       <Component {...pageProps} />
-      <Header/>
       <Footer/>
       
       <Script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'/>
