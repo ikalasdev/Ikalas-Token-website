@@ -101,7 +101,7 @@ export default function Home() {
               <div className="card bg-dark rounded-3 mx-2 col-sm">
                 <div className="card-body p-5 pb-0 my-auto d-flex justify-content-center h-40">
                   <h2 className="card-title text-white">
-                  <img src="/images/gold-ingots.png" alt="Kik" width={90} height={90} />
+                    <img src="/images/gold-ingots.png" alt="Kik" width={90} height={90} />
                   </h2>
                 </div>
                 <div className="card-body p-5 h-50">
@@ -120,7 +120,7 @@ export default function Home() {
               <div className="card  bg-dark rounded-3 mx-2 col-sm">
                 <div className="card-body d-flex justify-content-center h-40" >
                   <h2 className="card-title text-white">
-                  <img src="/images/withdraw.png" alt="Kik" width={90} height={90} />
+                    <img src="/images/withdraw.png" alt="Kik" width={90} height={90} />
                   </h2>
                 </div>
                 <div className="card-body p-5 h-50">
@@ -202,6 +202,9 @@ export default function Home() {
           </div>
         </section>
 
+
+
+
         <section className="py-2 pt-md-15 bg-black text-center text-dark">
           <div>
             <h3 className='text-uppercase text-light'>Token Distribution</h3>
@@ -209,10 +212,50 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-10 pt-md-15 bg-black text-center text-dark">
-          <div>
+
+
+
+        <section className="py-10 pt-md-15 bg-black text-center text-dark" id="Roadmap">
+          <div className='mb-10'>
             <h3 className='text-uppercase text-light'>Roadmap</h3>
           </div>
+          <div className="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="main-timeline">
+                  <div class="timeline">
+                    <a href="#" class="timeline-content">
+                      <div class="timeline-year">2023</div>
+                      <h3 class="title">Full release</h3>
+                      <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo
+                      </p>
+                    </a>
+                  </div>
+                  <div class="timeline">
+                    <a href="#" class="timeline-content">
+                      <div class="timeline-year">2022</div>
+                      <h3 class="title">Token Ikalas (KIK)</h3>
+                      <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo
+                      </p>
+                    </a>
+                  </div>
+                  <div class="timeline">
+                    <a href="#" class="timeline-content">
+                      <div class="timeline-year">2021</div>
+                      <h3 class="title">Platform Ikalas</h3>
+                      <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo
+                      </p>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
         </section>
 
         <div className="bg-black">
