@@ -8,6 +8,7 @@ import "regenerator-runtime/runtime";
 import "../public/assets/css/custom.css";
 
 
+
 function MyApp({ Component, pageProps }) {
 
   const supportedChainIds = [56];

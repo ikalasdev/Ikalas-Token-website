@@ -2,21 +2,14 @@ import { imageConfigDefault } from 'next/dist/shared/lib/image-config'
 
 import Image from 'next/image'
 import React, { PureComponent } from 'react';
-import { PieChart, Pie, Sector, ResponsiveContainer } from 'recharts';
 
+import {data} from '../component/Pie'
+import dynamic from "next/dynamic";
+const MyResponsivePie = dynamic(()=> import ('../component/Pie'), {ssr:false})
 
-
-const data = [
-  { name: 'Group A', value: 400 },
-  { name: 'Group B', value: 300 },
-  { name: 'Group C', value: 300 },
-  { name: 'Group D', value: 200 },
-];
 
 
 export default function Home() {
-
-
 
   const nbholder = 1000;
   const nbtransaction = 300;
@@ -209,24 +202,11 @@ export default function Home() {
 
         <section className="py-2 pt-md-15 bg-black text-center text-dark">
           <div>
-            <h3 className='text-uppercase text-light'>Token Distribution</h3>
+            <h2 className='display-3 fw-bold text-white'>Token Distribution</h2>
             <div>
-              <h2>Polar Example</h2>
-              <ResponsiveContainer width="100%" height={400}>
-                <PieChart width="50%" height="50%">
-                  <Pie
-                    dataKey="value"
-                    startAngle={180}
-                    endAngle={0}
-                    data={data}
-                    cx="50%"
-                    cy="50%"
-                    outerRadius={80}
-                    fill="#8884d8"
-                    label
-                  />
-                </PieChart>
-              </ResponsiveContainer>
+              <div className="divchart">
+                <MyResponsivePie data={data} />
+              </div>
             </div>
           </div>
         </section>

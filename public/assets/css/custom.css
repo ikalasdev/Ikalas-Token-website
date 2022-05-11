@@ -195,3 +195,9 @@ html {
 {
     transform: rotate(180deg);
 }
+
+.divchart {
+    height: 30rem;
+    margin: 4rem;
+}
+
