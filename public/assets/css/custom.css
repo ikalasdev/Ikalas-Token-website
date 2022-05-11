@@ -184,7 +184,14 @@ html {
     background-image: url("../../assets/img/covers/cover-19.jpg");
 }
 
-.ikalaspicsMaxsize
+.delimiter {
+    width: 100%;
+    height: 150px;
+}
+
+
+
+.rotateDiv
 {
-    max-width: 800px;
+    transform: rotate(180deg);
 }

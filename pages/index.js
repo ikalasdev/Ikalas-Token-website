@@ -2,7 +2,7 @@ import { imageConfigDefault } from 'next/dist/shared/lib/image-config'
 
 import Image from 'next/image'
 import React from 'react';
-import { Doughnut } from 'react-chartjs-2';
+import { Polar } from 'react-chartjs-2';
 import { Chart, ArcElement, Legend } from 'chart.js'
 
 import styles from '../styles/Home.module.css'
@@ -18,24 +18,22 @@ export default function Home() {
 
   const data = {
     labels: [
-      'Founders',
-      'Shareholders',
-      'Community'
+      'Red',
+      'Green',
+      'Yellow',
     ],
+
     datasets: [{
-      data: [200, 100, 300],
+      label: 'Token distribution',
+      data: [11, 16, 7],
       backgroundColor: [
-        '#FF6384',
-        '#36A2EB',
-        '#FFCE56'
-      ],
-      hoverBackgroundColor: [
-        '#FF6384',
-        '#36A2EB',
-        '#FFCE56'
+        'rgb(255, 99, 132)',
+        'rgb(75, 192, 192)',
+        'rgb(255, 205, 86)',
       ]
     }]
   };
+
   return (
     <div >
       <main>
@@ -59,7 +57,7 @@ export default function Home() {
 
 
         <section className="bg-gradient-dark-black py-5 pt-md-13 text-light" id="KIK">
-          <div className='container text-center'>
+          <div className='container-fluid text-center'>
             <h2>
               What is the KIK ?
             </h2>
@@ -137,9 +135,9 @@ export default function Home() {
 
 
 
-        <section className="pt-8 pt-md-11 bg-black" id="Ikalas">
+        <section className="pt-8 pt-md-12 bg-black py-15" id="Ikalas">
           <div className='d-flex justify-content-around align-items-center mx-15'>
-            <div className='text-light px-5'>
+            <div className='text-light px-10 row'>
 
               <h2>
                 What is the Ikalas platform ?
@@ -150,76 +148,83 @@ export default function Home() {
               <p className="text-muted lead mb-7 mb-md-0">
                 <span className="text-white fw-bold">Use tools. </span> Use the community tools to create whatever you want by the website interface or the developpement interface (coming soon).
               </p>
+              <p className="text-muted lead mb-7 mb-md-0 mt-2">
+                <a className="text-primary fw-bold" href="https://ikalas.com/app">Ikalas.com</a>
+              </p>
             </div>
 
-
-
-            <div className='position-relative vw-md-50 p-7 p-md-15 ps-0 overflow-hidden float-end ikalaspicsMaxsize px-5'>
-              <div className="position-absolute top-0 end-0 bottom-0 start-0 bg-dark bg-pattern-2 rounded-4">
-                <img class="position-relative w-120 w-md-120 float-end" src="assets/img/screenshots/ui/landkit-figma.png" alt="..."/>
-              </div>
-            </div>
-
-
+            <img className="w-50" src="images/imageIkalas.png" alt="ikalasWebsitePics" />
           </div>
         </section>
 
 
-        <section className=" bg-black text-center text-dark pt-15" id="Stats">
-          <h3 className='text-uppercase text-light'>Statistiques</h3>
-          <div className="container">
-            <div className="d-flex justify-content-between">
-              <div className="card mx-2 bg-light">
-                <h4>
-                  Total number of holders :
-                </h4>
 
-                <p>
-                  <span>
-                    {nbholder}
-                  </span>
+        <div className='delimiter rotateDiv bg-gradient-dark-black'></div>
+
+        <section class=" pt-8 pt-md-10 pb-10 bg-dark w-100 d-flex justify-content-around">
+          <div>
+            <div class="d-flex justify-content-center text-center">
+              <div class="col-12 col-md-8 col-lg-6">
+
+
+                <h2 class="display-3 fw-bold text-white">
+                  The KIK Token
+                </h2>
+                <h6 class="text-uppercase text-info">
+                  with numbers
+                </h6>
+
+
+                <p class="text-muted lead mb-6 mb-md-8">
+                  We've made it easier for thousands of people to build their dream companies.
                 </p>
+
+                <div class="d-flex justify-content-center">
+                  <div class="pe-5">
+                    <h1 class="fw-bold text-white mb-0">
+                      <span data-countup="{&quot;startVal&quot;: 0}" data-to={nbholder} data-aos="" data-aos-id="countup:in" class="aos-init aos-animate">{nbholder}</span>
+                    </h1>
+                    <p class="text-gray-700 mb-0">
+                      holders
+                    </p>
+                  </div>
+                  <div class="mx-12">
+                    <h1 class="fw-bold text-white mb-0">
+                      <span data-countup="{&quot;startVal&quot;: 0}" data-to={nbtransaction} data-aos="" data-aos-id="countup:in" class="aos-init aos-animate">{nbtransaction}</span>
+                    </h1>
+                    <p class="text-gray-700 mb-0">
+                      transactions
+                    </p>
+                  </div>
+                  <div class="text-center mx-5">
+                    <h1 class="fw-bold text-white mb-0">
+                      <span data-countup="{&quot;startVal&quot;: &quot;0&quot;}" data-to={tokenPrice} data-aos="" data-aos-id="countup:in" class="aos-init aos-animate">{tokenPrice}</span>$
+                    </h1>
+                    <p class="text-gray-700 mb-0">
+                      price
+                    </p>
+                  </div>
+                </div>
+                <a href="https://bscscan.com/address/0x28E41ccB451F0E813403Cc91Cc49B0ca8178F3f2" target="_blank" className='btn btn-primary mt-10'>
+                  Discover the contract
+                </a>
               </div>
 
-              <div className="card mx-2">
-                <h4>
-                  Total number of transactions :
-                </h4>
-                <p>
-                  <span>
-                    {nbtransaction}
-                  </span>
-                </p>
-              </div>
-
-              <div className="card mx-2">
-                <h4>
-                  Price :
-                </h4>
-                <p>
-                  <span>
-                    {tokenPrice}
-                  </span>
-                </p>
-              </div>
             </div>
-
-
-            <button href="https://bscscan.com/address/0x28E41ccB451F0E813403Cc91Cc49B0ca8178F3f2"
-              className='btn btn-outline-primary bg-primary text-light px-2 py-1 border-2 border-light rounded my-5'
-            >
-              Discover more
-            </button>
           </div>
+
         </section>
 
-
+        <div className='delimiter bg-gradient-dark-black'></div>
 
 
         <section className="py-2 pt-md-15 bg-black text-center text-dark">
           <div>
             <h3 className='text-uppercase text-light'>Token Distribution</h3>
-            <p className='text-light'>futur graphique (enlevé parce que ca prend de la place)</p>
+            <div>
+              <h2>Polar Example</h2>
+              <Polar data={data} />
+            </div>
           </div>
         </section>
 
@@ -230,7 +235,7 @@ export default function Home() {
           <div className='mb-10'>
             <h3 className='text-uppercase text-light'>Roadmap</h3>
           </div>
-          <div className="container">
+          <div className="container-fluid">
             <div className="row">
               <div className="col-md-12">
                 <div className="main-timeline">
