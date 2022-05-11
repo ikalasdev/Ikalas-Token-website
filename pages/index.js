@@ -39,7 +39,7 @@ export default function Home() {
   return (
     <div >
       <main>
-        <section className="mt-n11 pt-12 pt-md-14 pb-md-14 bg-black bg-pattern-2 text-center">
+        <section className="mt-n11 pt-13 pt-md-15 pb-md-15 bg-black bg-pattern-2 text-center">
           <div >
             <Image src="/images/logo_bgLess_border.png" alt="Kik" width={120} height={115} />
           </div>
@@ -71,7 +71,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-5 bg-black text-dark pb-15" id="Infos">
+        <section className="py-5 bg-black text-dark pb-12" id="Infos">
 
           <div className="container">
             <div className="row">
@@ -133,37 +133,36 @@ export default function Home() {
               </div>
             </div>
           </div>
-
-
-
-        </section>
-
-        <section className="py-14 py-lg-16 jarallax sectionImgDiag " data-jarallax="" data-speed=".8" data-jarallax-original-styles="jarallaxstyle" id="Ikalas">
-
-          <div className="shape shape-top shape-fluid-x text-black">
-            <svg viewBox="0 0 2880 250" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h2880v125h-720L720 250H0V0z" fill="currentColor"></path></svg>      </div>
-
-
-          <div className="shape shape-bottom shape-fluid-x text-black">
-            <svg viewBox="0 0 2880 250" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M720 125L2160 0h720v250H0V125h720z" fill="currentColor"></path></svg>      </div>
-          <div id="jarallax-container-0" className='imgDiag'>
-            <div className='insideimgDiag'></div>
-          </div>
-
-          <div className='text-light'>
-            <h3>
-              What is the Ikalas platform ?
-            </h3>
-            <p>
-              The Ikalas platform is a platform that allows the users to use diverse tools.<br />
-              The platform is fully decentralized and allows the users to create their own tools and to share them.<br />
-              Ikalas rewards the users for their actions by giving them a Kik token when their tools are used by the community.<br />
-              As a developpement platform, Ikalas will allow developpers to use the Ikalas tools in there code with an API that is not available now.
-            </p>
-          </div>
         </section>
 
 
+
+        <section className="pt-8 pt-md-11 bg-black" id="Ikalas">
+          <div className='d-flex justify-content-around align-items-center mx-15'>
+            <div className='text-light px-5'>
+
+              <h2>
+                What is the Ikalas platform ?
+              </h2>
+              <p className="text-muted lead mb-6">
+                <span className="text-white fw-bold">Create tools. </span> The Ikalas platform allows you to create tools with code and deploy it as a module on the website.
+              </p>
+              <p className="text-muted lead mb-7 mb-md-0">
+                <span className="text-white fw-bold">Use tools. </span> Use the community tools to create whatever you want by the website interface or the developpement interface (coming soon).
+              </p>
+            </div>
+
+
+
+            <div className='position-relative vw-md-50 p-7 p-md-15 ps-0 overflow-hidden float-end ikalaspicsMaxsize px-5'>
+              <div className="position-absolute top-0 end-0 bottom-0 start-0 bg-dark bg-pattern-2 rounded-4">
+                <img class="position-relative w-120 w-md-120 float-end" src="assets/img/screenshots/ui/landkit-figma.png" alt="..."/>
+              </div>
+            </div>
+
+
+          </div>
+        </section>
 
 
         <section className=" bg-black text-center text-dark pt-15" id="Stats">

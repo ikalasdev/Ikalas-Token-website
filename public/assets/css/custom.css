@@ -183,3 +183,8 @@ html {
 .jarallaxstyle {
     background-image: url("../../assets/img/covers/cover-19.jpg");
 }
+
+.ikalaspicsMaxsize
+{
+    max-width: 800px;
+}
