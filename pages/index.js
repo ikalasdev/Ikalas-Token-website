@@ -1,38 +1,27 @@
 import { imageConfigDefault } from 'next/dist/shared/lib/image-config'
 
 import Image from 'next/image'
-import React from 'react';
-import { Polar } from 'react-chartjs-2';
-import { Chart, ArcElement, Legend } from 'chart.js'
+import React, { PureComponent } from 'react';
+import { PieChart, Pie, Sector, ResponsiveContainer } from 'recharts';
 
-import styles from '../styles/Home.module.css'
+
+
+const data = [
+  { name: 'Group A', value: 400 },
+  { name: 'Group B', value: 300 },
+  { name: 'Group C', value: 300 },
+  { name: 'Group D', value: 200 },
+];
 
 
 export default function Home() {
 
-  Chart.register(ArcElement, Legend);
 
-  const nbholder = 0;
-  const nbtransaction = 0;
-  const tokenPrice = 0;
 
-  const data = {
-    labels: [
-      'Red',
-      'Green',
-      'Yellow',
-    ],
+  const nbholder = 1000;
+  const nbtransaction = 300;
+  const tokenPrice = 8;
 
-    datasets: [{
-      label: 'Token distribution',
-      data: [11, 16, 7],
-      backgroundColor: [
-        'rgb(255, 99, 132)',
-        'rgb(75, 192, 192)',
-        'rgb(255, 205, 86)',
-      ]
-    }]
-  };
 
   return (
     <div >
@@ -161,46 +150,46 @@ export default function Home() {
 
         <div className='delimiter rotateDiv bg-gradient-dark-black'></div>
 
-        <section class=" pt-8 pt-md-10 pb-10 bg-dark w-100 d-flex justify-content-around">
+        <section className=" pt-8 pt-md-10 pb-10 bg-dark w-100 d-flex justify-content-around" id="Stats">
           <div>
-            <div class="d-flex justify-content-center text-center">
-              <div class="col-12 col-md-8 col-lg-6">
+            <div className="d-flex justify-content-center text-center">
+              <div className="col-12 col-md-8 col-lg-6">
 
 
-                <h2 class="display-3 fw-bold text-white">
+                <h2 className="display-3 fw-bold text-white">
                   The KIK Token
                 </h2>
-                <h6 class="text-uppercase text-info">
+                <h6 className="text-uppercase text-info">
                   with numbers
                 </h6>
 
 
-                <p class="text-muted lead mb-6 mb-md-8">
+                <p className="text-muted lead mb-6 mb-md-8">
                   We've made it easier for thousands of people to build their dream companies.
                 </p>
 
-                <div class="d-flex justify-content-center">
-                  <div class="pe-5">
-                    <h1 class="fw-bold text-white mb-0">
-                      <span data-countup="{&quot;startVal&quot;: 0}" data-to={nbholder} data-aos="" data-aos-id="countup:in" class="aos-init aos-animate">{nbholder}</span>
+                <div className="d-flex justify-content-center" >
+                  <div className="pe-5">
+                    <h1 className="fw-bold text-white mb-0">
+                      <span data-countup="{&quot;startVal&quot;: 0}" data-to={nbholder} data-aos="" data-aos-id="countup:in" className="aos-init aos-animate">{nbholder}</span>
                     </h1>
-                    <p class="text-gray-700 mb-0">
+                    <p className="text-gray-700 mb-0">
                       holders
                     </p>
                   </div>
-                  <div class="mx-12">
-                    <h1 class="fw-bold text-white mb-0">
-                      <span data-countup="{&quot;startVal&quot;: 0}" data-to={nbtransaction} data-aos="" data-aos-id="countup:in" class="aos-init aos-animate">{nbtransaction}</span>
+                  <div className="mx-12">
+                    <h1 className="fw-bold text-white mb-0">
+                      <span data-countup="{&quot;startVal&quot;: 0}" data-to={nbtransaction} data-aos="" data-aos-id="countup:in" className="aos-init aos-animate">{nbtransaction}</span>
                     </h1>
-                    <p class="text-gray-700 mb-0">
+                    <p className="text-gray-700 mb-0">
                       transactions
                     </p>
                   </div>
-                  <div class="text-center mx-5">
-                    <h1 class="fw-bold text-white mb-0">
-                      <span data-countup="{&quot;startVal&quot;: &quot;0&quot;}" data-to={tokenPrice} data-aos="" data-aos-id="countup:in" class="aos-init aos-animate">{tokenPrice}</span>$
+                  <div className="text-center mx-5">
+                    <h1 className="fw-bold text-white mb-0">
+                      <span data-countup="{&quot;startVal&quot;: &quot;0&quot;}" data-to={tokenPrice} data-aos="" data-aos-id="countup:in" className="aos-init aos-animate">{tokenPrice}</span>$
                     </h1>
-                    <p class="text-gray-700 mb-0">
+                    <p className="text-gray-700 mb-0">
                       price
                     </p>
                   </div>
@@ -223,7 +212,21 @@ export default function Home() {
             <h3 className='text-uppercase text-light'>Token Distribution</h3>
             <div>
               <h2>Polar Example</h2>
-              <Polar data={data} />
+              <ResponsiveContainer width="100%" height={400}>
+                <PieChart width="50%" height="50%">
+                  <Pie
+                    dataKey="value"
+                    startAngle={180}
+                    endAngle={0}
+                    data={data}
+                    cx="50%"
+                    cy="50%"
+                    outerRadius={80}
+                    fill="#8884d8"
+                    label
+                  />
+                </PieChart>
+              </ResponsiveContainer>
             </div>
           </div>
         </section>

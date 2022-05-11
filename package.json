@@ -10,9 +10,8 @@
   },
   "dependencies": {
     "@3rdweb/hooks": "^1.9.2",
-    "chart.js": "^3.7.1",
     "next": "12.1.6",
-    "react-chartjs-2": "^4.1.0"
+    "recharts": "^2.1.9"
   },
   "devDependencies": {
     "eslint": "8.14.0",
