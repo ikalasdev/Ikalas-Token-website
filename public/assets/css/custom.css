@@ -2,6 +2,11 @@ html {
     scroll-behavior: smooth;
 }
 
+body{
+    margin: 0%;
+    padding: 0%;
+}
+
 .dot {
     height: 10px;
     width: 10px;
@@ -197,7 +202,32 @@ html {
 }
 
 .divchart {
-    height: 30rem;
-    margin: 4rem;
+    height: 25rem;
+    width: 100%;
+    
 }
+
+.customContainer{
+    width: 80%;
+}
+
+@media only screen and (max-width: 600px) {
+    .MobDnone {
+      display: none;
+    }
+
+    .MobColonne{
+        margin-bottom: 20px;
+        width: 80%;
+    }
+
+    .MobCenterText{
+        text-align: center;
+    }
+    .MobColumn{
+        display: flex;
+        flex-direction: column;
+    }
+  }
+
 

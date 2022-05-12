@@ -15,7 +15,7 @@ export const data = [
   },
 
   {
-    id: "Community",
+    id: "Users",
     label: "Community",
     value: '33',
     color: "hsl(223,48,20)",
@@ -26,12 +26,12 @@ export const data = [
 const MyResponsivePie = ({ data }) => (
     <ResponsivePie
     data={data}
-    margin={{ top: 40, right: 80, bottom: 80, left: 80 }}
+    margin={{ top: 40, right: 90, bottom: 80, left: 80 }}
     innerRadius={0.5}
     padAngle={0.7}
     cornerRadius={15}
     activeOuterRadiusOffset={25}
-    colors={{ scheme: 'blues' }}
+    colors={["#0F2C64","#0137A3","#1659E6"]}
     borderWidth={2}
     borderColor={{
         from: 'color',
@@ -77,22 +77,7 @@ const MyResponsivePie = ({ data }) => (
         }
     ]}
     motionConfig="wobbly"
-    legends={[
-        {
-            anchor: 'top-left',
-            direction: 'column',
-            justify: false,
-            translateX: 35,
-            translateY: 0,
-            itemWidth: 52,
-            itemHeight: 26,
-            itemsSpacing: 3,
-            symbolSize: 25,
-            itemDirection: 'left-to-right',
-            "symbolShape": "circle",
-            "itemTextColor": '#fff',
-        }
-    ]}
+    
 />
 );
 
