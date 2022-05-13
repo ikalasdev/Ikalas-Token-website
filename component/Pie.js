@@ -1,23 +1,30 @@
 import { ResponsivePie } from "@nivo/pie";
 
+var Max = 100;
+var firstValue = Math.floor(Math.random() * Max);
+Max -= firstValue;
+var secondValue = Math.floor(Math.random() * Max);
+Max -= secondValue;
+var thirdValue = Max;
+
 export const data = [
   {
     id: "Creators",
     label: "Creators",
-    value: "33",
+    value: firstValue,
     color: "hsl(257,47%,57%)",
   },
   {
     id: "Shareholders",
     label: "Shareholders",
-    value: "33",
+    value: secondValue,
     color: "hsl(226,64,47)",
   },
 
   {
     id: "Users",
     label: "Community",
-    value: '33',
+    value: thirdValue,
     color: "hsl(223,48,20)",
   },
 ];

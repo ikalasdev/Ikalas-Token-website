@@ -7,8 +7,8 @@ const Navbar = () => {
 
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark border-bottom-1 border-light d-flex justify-content-between">
-      <div className='mx-5 d-flex align-item-center'>
+    <nav className="navbar navbar-expand-lg navbar-dark border-bottom-1 border-light d-flex justify-content-center">
+      <div className='mx-5 d-flex align-item-center position-absolute start-0'>
         <Image src="/images/logo_bgLess.png" className='rounded-circle' width={50} height={50} />
         <span className="navbar-brand mx-2 mt-1" width={50} height={50}>KIK</span>
       </div>
@@ -33,7 +33,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className='mx-5'><Login /></div>
+      <div className='mx-5 position-absolute end-0'><Login /></div>
     </nav>
   );
 };
