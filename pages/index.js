@@ -238,11 +238,12 @@ export default function Home() {
                                                 <h3>June :</h3>
                                                 Creation of ERC-20 token on Polygon and Ethereum blockchain on Ikalas
                                             </p>
+                                            <div className='d-flex justify-content-center align-item-center'>
                                             <h3>May :</h3>
-                                            <p className="description row">
-                                                
+                                            <p className="description">
                                                 Creation of ERC-20 token on BSC blockchain on Ikalas
                                             </p>
+                                            </div>
                                         </a>
                                     </div>
                                     <div className="timeline" data-aos="flip-up" >
@@ -262,14 +263,6 @@ export default function Home() {
 
                 </section>
 
-                <section className="py-12 pt-md-8 bg-black text-center text-dark" id="News">
-                    <div >
-                        <h2 className='display-3 fw-bold text-white'>News</h2>
-                    </div>
-                    <div className="container">
-                        <News />
-                    </div>
-                </section>
 
 
                 <div className="position-relative">
