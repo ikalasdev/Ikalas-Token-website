@@ -58,7 +58,7 @@ export default function Home() {
                             <div className="card bg-dark rounded-3 mx-2 col-sm MobColonne">
                                 <div className="card-body p-5 pb-0 my-auto d-flex justify-content-center h-40">
                                     <h2 className="card-title text-white">
-                                        <img src="/images/token.png" alt="Kik" width={90} height={90} />
+                                        <Image src="/images/token.png" alt="Kik" width={90} height={90} />
                                     </h2>
                                 </div>
                                 <div className="card-body p-5 h-50">
@@ -69,7 +69,7 @@ export default function Home() {
                                     </h3>
 
                                     <p className="text-muted mb-0">
-                                        We can't create new KIK token, the total amount is immutable.
+                                        We can &apos; t create new KIK token, the total amount is immutable.
                                     </p>
 
                                 </div>
@@ -78,7 +78,7 @@ export default function Home() {
                             <div className="card bg-dark rounded-3 mx-2 col-sm MobColonne">
                                 <div className="card-body p-5 pb-0 my-auto d-flex justify-content-center h-40">
                                     <h2 className="card-title text-white">
-                                        <img src="/images/gold-ingots.png" alt="Kik" width={90} height={90} />
+                                        <Image src="/images/gold-ingots.png" alt="Kik" width={90} height={90} />
                                     </h2>
                                 </div>
                                 <div className="card-body p-5 h-50">
@@ -97,7 +97,7 @@ export default function Home() {
                             <div className="card  bg-dark rounded-3 mx-2 col-sm MobColonne">
                                 <div className="card-body d-flex justify-content-center h-40" >
                                     <h2 className="card-title text-white">
-                                        <img src="/images/withdraw.png" alt="Kik" width={90} height={90} />
+                                        <Image src="/images/withdraw.png" alt="Kik" width={90} height={90} />
                                     </h2>
                                 </div>
                                 <div className="card-body p-5 h-50">
@@ -116,7 +116,7 @@ export default function Home() {
 
 
                 <section className="pt-8 pt-md-12 bg-black py-15 d-flex justify-content-center" id="Ikalas">
-                    <div className='customContainer d-flex justify-content-center MobCenterText'>
+                    <div className='customContainer d-flex justify-content-center MobCenterText align-item-row'>
                         <div className='text-light row px-10'>
 
                             <h2 className='display-5 fw-bold text-white'>
@@ -132,8 +132,9 @@ export default function Home() {
                                 <a className="text-primary fw-bold" href="https://ikalas.com/app">Ikalas.com</a>
                             </p>
                         </div>
-
-                        <img className="w-50 MobDnone" src="images/imageIkalas.png" alt="ikalasWebsitePics" />
+                        <div>
+                            <Image className="MobDnone" src="/images/imageIkalas.png" alt="ikalasWebsitePics" width="4000" height="2500" objectFit="cover"/>
+                        </div>
                     </div>
                 </section>
 
@@ -156,7 +157,7 @@ export default function Home() {
 
 
                                 <p className="text-muted lead mb-6 mb-md-8">
-                                    We've made it easier for thousands of people to build their dream projects.
+                                    We &apos; ve made it easier for thousands of people to build their dream projects.
                                 </p>
 
                                 <div className="d-flex justify-content-between MobColumn" >
@@ -185,7 +186,7 @@ export default function Home() {
                                         </p>
                                     </div>
                                 </div>
-                                <a href="https://bscscan.com/token/0x28E41ccB451F0E813403Cc91Cc49B0ca8178F3f2" target="_blank" className='btn btn-primary mt-10'>
+                                <a href="https://bscscan.com/token/0x28E41ccB451F0E813403Cc91Cc49B0ca8178F3f2" target="_blank" rel="noreferrer" className='btn btn-primary mt-10'>
                                     Discover the contract
                                 </a>
                             </div>
