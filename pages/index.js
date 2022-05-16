@@ -56,7 +56,7 @@ export default function Home() {
                         <div className="row  d-flex justify-content-center">
 
                             <div className="card bg-dark rounded-3 mx-2 col-sm MobColonne">
-                                <div className="card-body p-5 pb-0 my-auto d-flex justify-content-center h-40">
+                                <div className="card-body d-flex justify-content-center h-40">
                                     <h2 className="card-title text-white">
                                         <Image src="/images/token.png" alt="Kik" width={90} height={90} />
                                     </h2>
@@ -76,7 +76,7 @@ export default function Home() {
                             </div>
 
                             <div className="card bg-dark rounded-3 mx-2 col-sm MobColonne">
-                                <div className="card-body p-5 pb-0 my-auto d-flex justify-content-center h-40">
+                                <div className="card-body d-flex justify-content-center h-40">
                                     <h2 className="card-title text-white">
                                         <Image src="/images/gold-ingots.png" alt="Kik" width={90} height={90} />
                                     </h2>
@@ -132,8 +132,8 @@ export default function Home() {
                                 <a className="text-primary fw-bold" href="https://ikalas.com/app">Ikalas.com</a>
                             </p>
                         </div>
-                        <div>
-                            <Image className="MobDnone" src="/images/imageIkalas.png" alt="ikalasWebsitePics" width="4000" height="2500" objectFit="cover"/>
+                        <div className="MobDnoneImg">
+                            <Image src="/images/imageIkalas.png" alt="ikalasWebsitePics" width="4000" height="2500" objectFit="cover"/>
                         </div>
                     </div>
                 </section>
