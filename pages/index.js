@@ -10,9 +10,9 @@ const MyResponsivePie = dynamic(() => import('../component/Pie'), { ssr: false }
 export default function Home() {
 
 
-    const nbholder = Math.floor(Math.random() * 100);
-    const nbtransaction = Math.floor(Math.random() * 100);
-    const tokenPrice = Math.floor(Math.random() * 100);
+    const nbholder = 1.1;
+    const nbtransaction = 1.3;
+    const tokenPrice = 0.00;
 
 
     return (
@@ -202,6 +202,9 @@ export default function Home() {
                 <section className="py-2 pt-md-12 bg-black text-center text-dark">
                     <div>
                         <h2 className='display-3 fw-bold text-white'>Token Distribution</h2>
+                        <p className="text-muted lead mb-6">
+                            The KIK token is distributed on the Binance SmartChain in the following way :
+                        </p>
                         <div className='d-flex justify-content-center'>
                             <div className="divchart" data-aos="zoom-in">
                                 <MyResponsivePie data={data} />
@@ -222,19 +225,23 @@ export default function Home() {
                                 <div className="main-timeline">
                                     <div className="timeline" data-aos="flip-up">
                                         <a className="timeline-content">
-                                            <div className="timeline-year">2023</div>
-                                            <h3 className="title">Full release</h3>
-                                            <p className="description">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo
-                                            </p>
-                                        </a>
-                                    </div>
-                                    <div className="timeline" data-aos="flip-up">
-                                        <a className="timeline-content">
                                             <div className="timeline-year">2022</div>
-                                            <h3 className="title">Token Ikalas (KIK)</h3>
                                             <p className="description">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo
+                                                <h3>september :</h3> 
+                                                Offical launch of the KIK token
+                                            </p>
+                                            <p className="description">
+                                                <h3>July :</h3> 
+                                                Creation of NFT on Ikalas
+                                            </p>
+                                            <p className="description">
+                                                <h3>June :</h3>
+                                                Creation of ERC-20 token on Polygon and Ethereum blockchain on Ikalas
+                                            </p>
+                                            <h3>May :</h3>
+                                            <p className="description row">
+                                                
+                                                Creation of ERC-20 token on BSC blockchain on Ikalas
                                             </p>
                                         </a>
                                     </div>
@@ -265,7 +272,7 @@ export default function Home() {
                 </section>
 
 
-                <div className="position-relative MobDnon">
+                <div className="position-relative">
                     <div className="shape shape-bottom shape-fluid-x text-dark">
                         <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"></path></svg>
                     </div>

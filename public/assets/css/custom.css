@@ -134,15 +134,15 @@ body{
 }
 
 .main-timeline .timeline:nth-child(4n+2) .timeline-content:before {
-    background: #ff3e7c;
+    background: #6414f9;
 }
 
 .main-timeline .timeline:nth-child(4n+3) .timeline-content:before {
-    background: #7438be;
+    background: #7f11d9;
 }
 
 .main-timeline .timeline:nth-child(4n+4) .timeline-content:before {
-    background: #bdc203;
+    background: #7438be;
 }
 
 @media screen and (max-width:767px) {
