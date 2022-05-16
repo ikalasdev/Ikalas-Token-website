@@ -3,14 +3,13 @@ import { imageConfigDefault } from 'next/dist/shared/lib/image-config'
 import Image from 'next/image'
 import React, { PureComponent } from 'react';
 import { data } from '../component/Pie'
+import News from '../component/News'
 import dynamic from "next/dynamic";
 const MyResponsivePie = dynamic(() => import('../component/Pie'), { ssr: false })
 
-
-
-
-
 export default function Home() {
+
+
     const nbholder = Math.floor(Math.random() * 100);
     const nbtransaction = Math.floor(Math.random() * 100);
     const tokenPrice = Math.floor(Math.random() * 100);
@@ -20,6 +19,7 @@ export default function Home() {
         <div >
             <main>
                 <section className="mt-n15 pt-15 pb-15  bg-black bg-pattern-2 text-center">
+                    
                     <div className='mt-15'>
                         <Image src="/images/logo_bgLess_border.png" alt="Kik" width={120} height={115} />
                     </div>
@@ -29,7 +29,7 @@ export default function Home() {
                         welcome simplicity
                     </h2>
                 </section>
-
+                
 
                 <div className="position-relative MobDnon">
                     <div className="shape shape-bottom shape-fluid-x text-dark">
@@ -252,6 +252,15 @@ export default function Home() {
                         </div>
                     </div>
 
+                </section>
+
+                <section className="py-12 pt-md-13 bg-black text-center text-dark" id="News">
+                    <div >
+                        <h2 className='display-3 fw-bold text-white'>News</h2>
+                    </div>
+                    <div className="container">
+                        <News />
+                    </div>
                 </section>
 
 
