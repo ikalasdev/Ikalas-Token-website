@@ -31,13 +31,13 @@ export default function Home() {
                 </section>
                 
 
-                <div className="position-relative MobDnon">
+                <div className="position-relative">
                     <div className="shape shape-bottom shape-fluid-x text-dark">
                         <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"></path></svg>
                     </div>
                 </div>
 
-                <section className="bg-gradient-dark-black py-5 pt-md-13 text-light" id="KIK">
+                <section className="bg-gradient-dark-black py-5 pt-md-14 text-light" id="KIK">
                     <div className='container-fluid text-center'>
                         <h2 className='display-5 fw-bold text-white'>
                             What is the KIK ?
@@ -50,7 +50,7 @@ export default function Home() {
                     </div>
                 </section>
 
-                <section className="py-5 bg-black text-dark pb-12" id="Infos">
+                <section className="py-5 bg-black text-dark pb-2">
 
                     <div className="container">
                         <div className="row  d-flex justify-content-center">
@@ -115,7 +115,7 @@ export default function Home() {
                 </section>
 
 
-                <section className="pt-8 pt-md-12 bg-black py-15 d-flex justify-content-center" id="Ikalas">
+                <section className="pt-8 pt-md-12 bg-black py-15 d-flex justify-content-center pb-10" id="Ikalas">
                     <div className='customContainer d-flex justify-content-center MobCenterText align-item-row'>
                         <div className='text-light row px-10'>
 
@@ -142,7 +142,7 @@ export default function Home() {
 
                 <div className='delimiter rotateDiv bg-gradient-dark-black'></div>
 
-                <section className=" pt-8 pt-md-10 pb-10 bg-dark w-100 d-flex justify-content-around" id="Stats">
+                <section className=" pt-8 pt-md-8 pb-8 bg-dark w-100 d-flex justify-content-around" id="Stats">
                     <div className='container'>
                         <div className="d-flex justify-content-center text-center">
                             <div className="col-12 col-md-8 col-lg-6">
@@ -199,7 +199,7 @@ export default function Home() {
                 <div className='delimiter bg-gradient-dark-black'></div>
 
 
-                <section className="py-2 pt-md-15 bg-black text-center text-dark">
+                <section className="py-2 pt-md-12 bg-black text-center text-dark">
                     <div>
                         <h2 className='display-3 fw-bold text-white'>Token Distribution</h2>
                         <div className='d-flex justify-content-center'>
@@ -212,7 +212,7 @@ export default function Home() {
 
 
 
-                <section className="py-12 pt-md-13 bg-black text-center text-dark" id="Roadmap">
+                <section className="py-12 pt-md-12 bg-black text-center text-dark" id="Roadmap">
                     <div className='mb-10'>
                         <h2 className='display-3 fw-bold text-white'>Roadmap</h2>
                     </div>
@@ -255,7 +255,7 @@ export default function Home() {
 
                 </section>
 
-                <section className="py-12 pt-md-13 bg-black text-center text-dark" id="News">
+                <section className="py-12 pt-md-8 bg-black text-center text-dark" id="News">
                     <div >
                         <h2 className='display-3 fw-bold text-white'>News</h2>
                     </div>
