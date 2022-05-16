@@ -32,7 +32,7 @@ const MyResponsivePie = ({ data }) => (
     padAngle={0.7}
     cornerRadius={15}
     activeOuterRadiusOffset={25}
-    colors={["#0F2C64","#0137A3","#1659E6"]}
+    colors={["#6414f9","#7438be","#00a6f9"]}
     borderWidth={2}
     borderColor={{
         from: 'color',
