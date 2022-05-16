@@ -215,7 +215,7 @@ export default function Home() {
 
 
 
-                <section className="py-12 pt-md-12 bg-black text-center text-dark" id="Roadmap">
+                <section className="py-12 pt-md-12 pb-13 bg-black text-center text-dark" id="Roadmap">
                     <div className='mb-10'>
                         <h2 className='display-3 fw-bold text-white'>Roadmap</h2>
                     </div>
@@ -226,33 +226,22 @@ export default function Home() {
                                     <div className="timeline" data-aos="flip-up">
                                         <a className="timeline-content">
                                             <div className="timeline-year">2022</div>
-                                            <p className="description">
-                                                <h3>september :</h3> 
-                                                Offical launch of the KIK token
-                                            </p>
-                                            <p className="description">
-                                                <h3>July :</h3> 
-                                                Creation of NFT on Ikalas
-                                            </p>
-                                            <p className="description">
-                                                <h3>June :</h3>
-                                                Creation of ERC-20 token on Polygon and Ethereum blockchain on Ikalas
-                                            </p>
-                                            <div className='d-flex justify-content-center align-item-center'>
-                                            <h3>May :</h3>
-                                            <p className="description">
-                                                Creation of ERC-20 token on BSC blockchain on Ikalas
-                                            </p>
-                                            </div>
+                                            <ul className="list-unstyled w-100 text-right py-3">
+                                                <li className="pb-5"><span><b>SEPTEMBER : </b></span>Official launch of the KIK token</li>
+                                                <li className="pb-5"><span><b>JULY : </b></span>Creation of NFT on Ikalas</li>
+                                                <li className="pb-5"><span><b>JUNE : </b></span>Creation of ERC-20 token on Polygon and Ethereum blockchain on Ikalas</li>
+                                                <li className="pb-5"><span><b>MAY : </b></span>Creation of ERC-20 token on BSC blockchain on Ikalas</li>
+                                            </ul>
                                         </a>
                                     </div>
                                     <div className="timeline" data-aos="flip-up" >
                                         <a className="timeline-content">
                                             <div className="timeline-year">2021</div>
-                                            <h3 className="title">Platform Ikalas</h3>
-                                            <p className="description">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo
-                                            </p>
+                                            <ul className="list-unstyled w-100 text-left py-3">
+                                                <li className="pb-5"><span><b>DECEMBER : </b></span>Launch multisender for Polygon network on Ikalas</li>
+                                                <li className="pb-5"><span><b>JULY : </b></span>Creation of multisender on BSC and ETH networks on Ikalas </li>
+                                                <li className="pb-5"><span><b>JANUARY : </b></span>Launch of the beta version of the Ikalas website</li>
+                                            </ul>
                                         </a>
                                     </div>
 
