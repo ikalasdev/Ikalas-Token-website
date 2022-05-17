@@ -23,16 +23,24 @@ const News = () => {
             <div className="navigation-wrapper">
                 <div ref={sliderRef} className="keen-slider">
                     <div className="keen-slider__slide number-slide1 d-flex flex-column justify-content-center">
-                        <h3 className="display-5 fw-bold">13/05/2022</h3>
-                        <span className="text-muted lead">News carousel on the KIK token website</span>
+                        <h3 className="display-5 fw-bold">20/05/2022</h3>
+                        <span className="text-muted lead">Release of the KIK website</span>
                     </div>
-                    <div className="keen-slider__slide number-slide2  d-flex flex-column justify-content-center">
-                        <h3 className="display-5 fw-bold">13/05/2022</h3>
-                        <span className="text-muted lead">News carousel on the KIK token website</span>
+                    <div className="keen-slider__slide number-slide2 d-flex flex-column justify-content-center">
+                        <h3 className="display-5 fw-bold">05/2022</h3>
+                        <span className="text-muted lead">New module on Ikalas : ERC20 creator for the BSC network</span>
                     </div>
                     <div className="keen-slider__slide number-slide3  d-flex flex-column justify-content-center">
-                        <h3 className="display-5 fw-bold">13/05/2022</h3>
-                        <span className="text-muted lead">News carousel on the KIK token website</span>
+                        <h3 className="display-5 fw-bold">12/2021</h3>
+                        <span className="text-muted lead">New module on Ikalas : Multisender for Polygon network</span>
+                    </div>
+                    <div className="keen-slider__slide number-slide4  d-flex flex-column justify-content-center">
+                        <h3 className="display-5 fw-bold">07/2021</h3>
+                        <span className="text-muted lead">New module on Ikalas : Multisender for BSC network</span>
+                    </div>
+                    <div className="keen-slider__slide number-slide5  d-flex flex-column justify-content-center">
+                        <h3 className="display-5 fw-bold">01/2021</h3>
+                        <span className="text-muted lead">Lauch of the Ikalas Beta</span>
                     </div>
                 </div>
                 {loaded && instanceRef.current && (

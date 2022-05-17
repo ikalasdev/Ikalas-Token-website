@@ -7,8 +7,12 @@ import News from '../component/News'
 import dynamic from "next/dynamic";
 const MyResponsivePie = dynamic(() => import('../component/Pie'), { ssr: false })
 
+
+
 export default function Home() {
 
+
+    
 
     const nbholder = 1.1;
     const nbtransaction = 1.3;
@@ -140,9 +144,9 @@ export default function Home() {
 
 
 
-                <div className='delimiter rotateDiv bg-gradient-dark-black'></div>
+                <div className='delimiter rotateDiv bg-gradient-dark-black'  id="Stats"></div>
 
-                <section className=" pt-8 pt-md-8 pb-8 bg-dark w-100 d-flex justify-content-around" id="Stats">
+                <section className=" pt-8 pt-md-8 pb-8 bg-dark w-100 d-flex justify-content-around">
                     <div className='container'>
                         <div className="d-flex justify-content-center text-center">
                             <div className="col-12 col-md-8 col-lg-6">
@@ -252,7 +256,14 @@ export default function Home() {
 
                 </section>
 
-
+                <section className="py-12 pt-md-5 bg-black text-center text-dark" id="News">
+                    <div >
+                        <h2 className='display-3 fw-bold text-white'>News</h2>
+                    </div>
+                    <div className="container">
+                        <News />
+                    </div>
+                </section>
 
                 <div className="position-relative">
                     <div className="shape shape-bottom shape-fluid-x text-dark">
