@@ -2,7 +2,7 @@ html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     margin: 0%;
     padding: 0%;
 }
@@ -185,6 +185,7 @@ body{
     position: relative;
     z-index: 0;
 }
+
 .jarallaxstyle {
     background-image: url("../../assets/img/covers/cover-19.jpg");
 }
@@ -196,54 +197,54 @@ body{
 
 
 
-.rotateDiv
-{
+.rotateDiv {
     transform: rotate(180deg);
 }
 
 .divchart {
     height: 25rem;
     width: 100%;
-    
+
 }
 
-.customContainer{
+.customContainer {
     width: 80%;
 }
 
 @media only screen and (max-width: 600px) {
     .MobDnone {
-      display: none;
+        display: none;
     }
 
-    .MobColonne{
+    .MobColonne {
         margin-bottom: 20px;
         width: 80%;
     }
 
-    .MobCenterText{
+    .MobCenterText {
         text-align: center;
     }
-    .MobColumn{
+
+    .MobColumn {
         display: flex;
         flex-direction: column;
     }
-  }
+}
 
-  @media only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) {
     .MobDnoneImg {
-      display: none;
+        display: none;
     }
 
 
-  }
+}
 
-  @media only screen and (max-width: 1000px) {
-    .MobNavbarPos{
-        height : 80px
+@media only screen and (max-width: 1000px) {
+    .MobNavbarPos {
+        height: 80px
     }
 
-  }
+}
 
 
 
@@ -252,19 +253,19 @@ body{
 
 [class^="number-slide"],
 [class*=" number-slide"] {
-  background: grey;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 50px;
-  color: #fff;
-  font-weight: 500;
-  height: 300px;
-  max-height: 100vh;
+    background: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: #fff;
+    font-weight: 500;
+    height: 300px;
+    max-height: 100vh;
 }
 
 .number-slide1 {
-  background: transparent;
+    background: transparent;
 }
 
 .number-slide2 {
@@ -282,81 +283,83 @@ body{
 .number-slide5 {
     background: transparent;
 }
+
 .number-slide6 {
     background: transparent;
 }
 
 .navigation-wrapper {
-  position: relative;
+    position: relative;
 }
 
 .dots {
-  display: flex;
-  padding: 10px 0;
-  justify-content: center;
+    display: flex;
+    padding: 10px 0;
+    justify-content: center;
 }
 
 .dot {
-  border: none;
-  width: 10px;
-  height: 10px;
-  background: #fff;
-  border-radius: 50%;
-  margin: 0 5px;
-  padding: 5px;
-  cursor: pointer;
+    border: none;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+    margin: 0 5px;
+    padding: 5px;
+    cursor: pointer;
 }
 
 .dot:focus {
-  outline: none;
+    outline: none;
 }
 
 .dot.active {
-  background: #1B2A4E;
+    background: #1B2A4E;
 }
 
 .arrow {
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  fill: #fff;
-  cursor: pointer;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    fill: #fff;
+    cursor: pointer;
 }
 
 .arrow--left {
-  left: 5px;
+    left: 5px;
 }
 
 .arrow--right {
-  left: auto;
-  right: 5px;
+    left: auto;
+    right: 5px;
 }
 
 .arrow--disabled {
-  fill: rgba(255, 255, 255, 0.5);
+    fill: rgba(255, 255, 255, 0.5);
 }
 
 
 .text-left {
-  text-align: left;
+    text-align: left;
 }
+
 .text-right {
-  text-align: right;
+    text-align: right;
 }
 
 
-.scrolltotopbtn{
+.scrolltotopbtn {
     position: fixed;
     bottom: 50px;
     right: 50px;
-    z-index: 100; 
+    z-index: 100;
 }
 
 
-.scrolltotopbtn:hover{
+.scrolltotopbtn:hover {
     background-color: #1B2A4E;
     color: #fff;
 }
@@ -366,26 +369,35 @@ body{
     /* How it will look before scrolled */
     position: fixed;
     background-color: transparent !important;
-  
+
     /* To give smoote change */
-      -webkit-transition: all ease-out .5s;
+    -webkit-transition: all ease-out .5s;
     -moz-transition: all ease-out .5s;
     -o-transition: all ease-out .5s;
     transition: all ease-out .5s;
-  }
-  .NavBarBG.scrolled {
+}
+
+.NavBarBG.scrolled {
     /* How it will look when scrolled */
     background-color: #161C2D !important;
     border-bottom: 1px solid #a1a1a1 !important;
-     
-  }
 
-  @media only screen and (max-width: 1300px) {
-    .lang-buttonMob{
-        position : absolute;
-        margin:0;
-        right : -25px;
-        top : 50px;
+}
+
+@media only screen and (max-width: 1300px) {
+    .lang-buttonMob {
+        position: absolute;
+        margin: 0;
+        right: -25px;
+        top: 50px;
     }
+}
 
-  }
+@media only screen and (max-width: 600px) {
+    .lang-buttonMob {
+        position: absolute;
+        margin: 0;
+        right: -25px;
+        top: -20px;
+    }
+}
