@@ -1,5 +1,5 @@
 import { ResponsivePie } from "@nivo/pie";
-
+import { _tr } from "../services/translate"
 
 export const data = [
   {

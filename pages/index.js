@@ -231,10 +231,10 @@ export default function Home() {
                                         <a className="timeline-content">
                                             <div className="timeline-year">2022</div>
                                             <ul className="list-unstyled w-100 text-right py-3">
-                                                <li className="pb-5"><span><b>SEPTEMBER : </b></span>Official launch of the KIK token</li>
-                                                <li className="pb-5"><span><b>JULY : </b></span>Creation of NFT on Ikalas</li>
-                                                <li className="pb-5"><span><b>JUNE : </b></span>Creation of ERC-20 token on Polygon and Ethereum blockchain on Ikalas</li>
-                                                <li className="pb-5"><span><b>MAY : </b></span>Creation of ERC-20 token on BSC blockchain on Ikalas</li>
+                                                <li className="pb-5"><span className='text-uppercase'><b>{_tr("september")} </b></span>{_tr("RoadmapText1")}</li>
+                                                <li className="pb-5"><span className='text-uppercase'><b>{_tr("july")} </b></span>{_tr("RoadmapText2")}</li>
+                                                <li className="pb-5"><span className='text-uppercase'><b>{_tr("june")} </b></span>{_tr("RoadmapText3")}</li>
+                                                <li className="pb-5"><span className='text-uppercase'><b>{_tr("may")} </b></span>{_tr("RoadmapText4")}</li>
                                             </ul>
                                         </a>
                                     </div>
@@ -242,9 +242,9 @@ export default function Home() {
                                         <a className="timeline-content">
                                             <div className="timeline-year">2021</div>
                                             <ul className="list-unstyled w-100 text-left py-3">
-                                                <li className="pb-5"><span><b>DECEMBER : </b></span>Launch multisender for Polygon network on Ikalas</li>
-                                                <li className="pb-5"><span><b>JULY : </b></span>Creation of multisender on BSC and ETH networks on Ikalas </li>
-                                                <li className="pb-5"><span><b>JANUARY : </b></span>Launch of the beta version of the Ikalas website</li>
+                                                <li className="pb-5"><span className='text-uppercase'><b>{_tr("december")} </b></span>{_tr("RoadmapText5")}</li>
+                                                <li className="pb-5"><span className='text-uppercase'><b>{_tr("july")} </b></span>{_tr("RoadmapText6")}</li>
+                                                <li className="pb-5"><span className='text-uppercase'><b>{_tr("january")} </b></span>{_tr("RoadmapText7")}</li>
                                             </ul>
                                         </a>
                                     </div>
