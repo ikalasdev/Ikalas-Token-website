@@ -379,3 +379,13 @@ body{
     border-bottom: 1px solid #a1a1a1 !important;
      
   }
+
+  @media only screen and (max-width: 1300px) {
+    .lang-buttonMob{
+        position : absolute;
+        margin:0;
+        right : -25px;
+        top : 50px;
+    }
+
+  }

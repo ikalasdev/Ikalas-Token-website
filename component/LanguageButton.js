@@ -1,40 +1,35 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router"
+import { useCookies } from 'react-cookie';
 
 
 
 const LanguageButton = () => {
-    var isFR = true;
-    if (typeof window !== 'undefined') {
-        var url = window.location.href;
-        var baseURL = url.split('/')[0] + '//' + url.split('/')[2];
-        url = url.toLowerCase();
-        
-        if (url.includes("/en")) 
-        {
-            isFR = false;
-        } else {
-            isFR = true;
-        }
+    const [ cookie, setCookie ] = useCookies(['NEXT_LOCALE']);
+    const router = useRouter();
+    const { locale } = router;
+  
+    const switchLanguage = (e) => {
+      const locale = e.target.value;
+      router.push('/','/', { locale });
+      if(cookie.NEXT_LOCALE !== locale){
+        setCookie("NEXT_LOCALE", locale, { path: "/" });
+      }
+    } 
 
-    }
     return (
-        <div className="flex flex-col align-items-center justify-center min-h-screen py-2 bg-slate-100 mx-5">
-            {isFR ? (
-                <Link href="http://localhost:9000/en">
-                    <div className="btn btn-outline-dark d-flex align-items-center text-light px-2 py-1 border-1 border-light rounded">
-                        <span className="mx-2">EN</span>
-                    </div>
-                </Link>
-            ) : (
-                <Link href="/fr">
-                    <div className="btn btn-outline-dark d-flex align-items-center text-light px-2 py-1 border-1 border-light rounded">
-                        <span className="mx-2">FR</span>
-                    </div>
-                </Link>
-            )}
+        <div className="d-flex align-items-center justify-center min-h-screen py-2 mx-5 lang-buttonMob">
+            <select
+                className="btn btn-outline-dark d-flex align-items-center text-light px-2 py-1 border-1 border-light rounded"
+                onChange={switchLanguage}
+                defaultValue={locale}
+            >
+                <option value="en" className="bg-dark">EN</option>
+                <option value="fr" className="bg-dark">FR</option>
+            </select>
         </div>
     );
 };
 
-    export default LanguageButton;
+export default LanguageButton;
