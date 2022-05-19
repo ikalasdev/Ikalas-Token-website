@@ -13,8 +13,7 @@ const MyResponsivePie = dynamic(() => import('../component/Pie'), { ssr: false }
 
 
 export default function Home() {
-
-
+    
     const nbholder = 1.1;
     const nbtransaction = 1.3;
     const tokenPrice = 0.00;

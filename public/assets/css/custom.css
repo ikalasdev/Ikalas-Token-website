@@ -235,6 +235,14 @@ body{
       display: none;
     }
 
+
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .MobNavbarPos{
+        height : 80px
+    }
+
   }
 
 
@@ -347,3 +355,27 @@ body{
     z-index: 100; 
 }
 
+
+.scrolltotopbtn:hover{
+    background-color: #1B2A4E;
+    color: #fff;
+}
+
+
+.NavBarBG {
+    /* How it will look before scrolled */
+    position: fixed;
+    background-color: transparent !important;
+  
+    /* To give smoote change */
+      -webkit-transition: all ease-out .5s;
+    -moz-transition: all ease-out .5s;
+    -o-transition: all ease-out .5s;
+    transition: all ease-out .5s;
+  }
+  .NavBarBG.scrolled {
+    /* How it will look when scrolled */
+    background-color: #161C2D !important;
+    border-bottom: 1px solid #a1a1a1 !important;
+     
+  }
