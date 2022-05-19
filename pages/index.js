@@ -1,21 +1,19 @@
 import { imageConfigDefault } from 'next/dist/shared/lib/image-config'
 
 import Image from 'next/image'
-import React, { PureComponent } from 'react';
+import React, { PureComponent} from 'react';
 import { data } from '../component/Pie'
 import News from '../component/News'
 import dynamic from "next/dynamic";
 import { _tr } from "../services/translate"
+import { ScrollToTop } from '../component/ScrollToTop';
 
 
 const MyResponsivePie = dynamic(() => import('../component/Pie'), { ssr: false })
 
 
-
 export default function Home() {
 
-
-    
 
     const nbholder = 1.1;
     const nbtransaction = 1.3;
@@ -23,6 +21,7 @@ export default function Home() {
 
 
     return (
+        <>
         <div >
             <main>
                 <section className="mt-n15 pt-15 pb-15  bg-black bg-pattern-2 text-center">
@@ -276,5 +275,7 @@ export default function Home() {
             </main>
 
         </div>
+        <ScrollToTop/>
+        </>
     )
 }
