@@ -5,6 +5,9 @@ import React, { PureComponent } from 'react';
 import { data } from '../component/Pie'
 import News from '../component/News'
 import dynamic from "next/dynamic";
+import { _tr } from "../services/translate"
+
+
 const MyResponsivePie = dynamic(() => import('../component/Pie'), { ssr: false })
 
 export default function Home() {
@@ -25,8 +28,8 @@ export default function Home() {
                     </div>
 
                     <h2 className='text-light mt-5'>
-                        Avoid complexity,<br />
-                        welcome simplicity
+                        {_tr("headline1")},<br />
+                        {_tr("headline2")}
                     </h2>
                 </section>
                 
