@@ -1,5 +1,6 @@
 import { useWeb3 } from "@3rdweb/hooks"
 import Image from "next/image";
+import { _tr } from "../services/translate"
 
 
 
@@ -12,7 +13,7 @@ const Login = () => {
         className="btn btn-outline-dark d-flex align-items-center text-light px-2 py-1 border-2 border-light rounded"
         >
           <span className="glowing-circle mx-1"></span>
-          <span className="mx-2">Connected</span>
+          <span className="mx-2">{_tr("LogButton2")}</span>
         </div>
       ) : (
         <div type="button" 
@@ -20,7 +21,7 @@ const Login = () => {
         onClick={()=>connectWallet("injected")}>
 
           <Image src="/images/metamask.svg" width={20} height={20}/> 
-          <span className="mx-2">Login with MetaMask</span>
+          <span className="mx-2">{_tr("LogButton")}</span>
         </div>
       )}
     </div>

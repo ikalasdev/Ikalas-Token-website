@@ -34,7 +34,7 @@ export const ScrollToTop = () => {
     );
 
     return (
-        <div class="">
+        <div className="">
             <button type='button' onClick={scrollToTop} className={classNames(
                 isVisible ? "opacity-100" : "opacity-0",
                 "scrolltotopbtn MobDnoneImg btn btn-primary btn-lg rounded-circle"

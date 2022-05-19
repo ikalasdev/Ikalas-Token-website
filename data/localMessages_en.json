@@ -1,5 +1,55 @@
 {
-    "headline1": "Avoid complexity",
-    "headline2": "welcome simplicity"
+    "slogan1": "Avoid complexity",
+    "slogan2": "welcome simplicity",
+
+
+    "KikExplainTitle": "What is the KIK ?",
+    "KikExplain1": "KIK is a BEP-20 token used in the platform Ikalas.com as the front door of the premium access.",
+    "KikExplain2":"The KIK token is fully tradable and allow the owners to get specific pivileges on the platform.",
+    "KikExplain3":"The KIK is also a new way to make income from your developping skills by creating usefull tools for the community.",
+
+    "Card1Title": "Non-mintable",
+    "Card2Title": "Supply",
+    "Card3Title": "Earnable",
+    "Card1Desc": "We can't create new KIK token, the total amount is immutable.",
+    "Card2Desc": "The KIK was created on the BSC blockchain with a max supply of 100 000 000 KIK.",
+    "Card3Desc": "The KIK is earnable by the community who serve the platform.",
+
+    "IkalasExplainTitle": "What is Ikalas ?",
+    "ImportantWord1":"Create tools. ",
+    "ImportantWord2":"Use tools. ",
+    "IkalasText1":" The Ikalas platform allows you to create tools with code and deploy it as a module on the website.",
+    "IkalasText2":" Use the community tools to create whatever you want by the website interface or the developpement interface (coming soon).",
+
+
+    "StatsTitle": "The KIK Token",
+    "withNumbers" : "with numbers",
+    "StatsText1" : "We've made it easier for thousands of people to build their dream projects.",
+    "Label1":"holders",
+    "Label2":"transactions",
+    "Label3":"price",
+    "DiscoverButton": "Discover the contract",
+
+    "DistributionTitle": "Token Distribution",
+    "DistributionText1": "The KIK token is distributed on the Binance SmartChain in the following way :",
+
+
+
+    "NewsTitle": "News",
+    "NewsText1": "Release of the KIK website",
+    "NewsText2": "New module on Ikalas : ERC20 creator for the BSC network",
+    "NewsText3": "New module on Ikalas : Multisender for Polygon network",
+    "NewsText4": "New module on Ikalas : Multisender for BSC network",
+    "NewsText5": "Lauch of the Ikalas Beta",
+
+    "NavLink1": "The KIK ?",
+    "NavLink2": "Ikalas ?",
+    "NavLink3": "Statistics",
+    "NavLink4": "Roadmap",
+    "NavLink5": "News",
+    "LogButton": "Connexion avec MetaMask",
+    "LogButton2": "Connected",
+
+    "FooterText": "Ikalas offers you apps to get more efficient."
 }
   

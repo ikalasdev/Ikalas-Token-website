@@ -1,5 +1,54 @@
 {
-    "headline1": "Au revoir complexité",
-    "headline2": "bienvenue simplicité"
+    "slogan1": "Au revoir complexité",
+    "slogan2": "bienvenue simplicité",
+
+
+    "KikExplainTitle": "Qu'est ce que le KIK?",
+    "KikExplain1": "KIK est un jeton BEP-20 utilisé sur la plateforme Ikalas.com comme porte d'entrée de l'accès premium.",
+    "KikExplain2":"Le jeton KIK est entièrement négociable et permet aux propriétaires d'obtenir des privilèges spécifiques sur la plateforme.",
+    "KikExplain3":"Le KIK est aussi une nouvelle façon de rentabiliser vos compétences en développement en créant des outils utiles pour la communauté.",
+
+    "Card1Title": "Non-mintable",
+    "Card2Title": "Quantité maximale",
+    "Card3Title": "Gagnable",
+    "Card1Desc": "Le KIK n'est pas créable, la quantité maximale est fixe et non-modifiable",
+    "Card2Desc": "Le KIK a été créé sur la blockchain BSC avec un approvisionnement maximum de 100 000 000 KIK.",
+    "Card3Desc": "Le KIK peut être gagné par la communauté qui sert la plateforme.",
+
+    "IkalasExplainTitle": "Qu'est ce que Ikalas?",
+    "ImportantWord1":"Creation d'outils. ",
+    "ImportantWord2":"Utilisation d'outils. ",
+    "IkalasText1":" La plateforme Ikalas permet de créer des outils avec du code et de le déployer sous forme de module sur le site.",
+    "IkalasText2":" Utilisez les outils communautaires pour créer ce que vous voulez via l'interface du site Web ou l'interface de développement (à venir).",
+
+    "StatsTitle": "Le jeton KIK",
+    "withNumbers" : "avec des chiffres",
+    "StatsText1" : "Nous avons permis à des milliers de personnes de construire plus facilement les projets de leurs rêves.",
+    "Label1":"pocesseurs",
+    "Label2":"transactions",
+    "Label3":"prix",
+    "DiscoverButton": "Découvrir le contrat",
+
+    "DistributionTitle": "Distribution du jeton",
+    "DistributionText1": "Le token KIK est distribué sur la Binance SmartChain de la manière suivante :",
+
+    "NewsTitle": "Informations",
+    "NewsText1": "Lancement du site Web du KIK",
+    "NewsText2": "Nouveau module sur Ikalas : créateur d'ERC20 pour le réseau BSC",
+    "NewsText3": "Nouveau module sur Ikalas : Multisender pour le réseau Polygon",
+    "NewsText4": "Nouveau module sur Ikalas : Multisender pour le réseau BSC",
+    "NewsText5": "Lancement de la Beta de Ikalas",
+
+    "NavLink1": "Le KIK?",
+    "NavLink2": "Ikalas?",
+    "NavLink3": "Statistiques",
+    "NavLink4": "Roadmap",
+    "NavLink5": "Informations",
+    "LogButton": "Connexion avec MetaMask",
+    "LogButton2": "Connecté",
+
+    "FooterText": "Ikalas vous propose des applications pour gagner en efficacité."
+    
+
 }
   

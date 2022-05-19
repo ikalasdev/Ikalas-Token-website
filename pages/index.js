@@ -1,4 +1,3 @@
-import { imageConfigDefault } from 'next/dist/shared/lib/image-config'
 
 import Image from 'next/image'
 import React, { PureComponent} from 'react';
@@ -13,7 +12,7 @@ const MyResponsivePie = dynamic(() => import('../component/Pie'), { ssr: false }
 
 
 export default function Home() {
-    
+
     const nbholder = 1.1;
     const nbtransaction = 1.3;
     const tokenPrice = 0.00;
@@ -30,8 +29,8 @@ export default function Home() {
                     </div>
 
                     <h2 className='text-light mt-5'>
-                        {_tr("headline1")},<br />
-                        {_tr("headline2")}
+                        {_tr("slogan1")},<br />
+                        {_tr("slogan2")}
                     </h2>
                 </section>
                 
@@ -45,12 +44,12 @@ export default function Home() {
                 <section className="bg-gradient-dark-black py-5 pt-md-14 text-light" id="KIK">
                     <div className='container-fluid text-center'>
                         <h2 className='display-5 fw-bold text-white'>
-                            What is the KIK ?
+                            {_tr("KikExplainTitle")}
                         </h2>
                         <p>
-                            KIK is a BEP-20 token used in the platform Ikalas.com as the front door of the premium access.<br />
-                            The KIK token is fully tradable and allow the owners to get specific pivileges on the platform.<br />
-                            The KIK is also a new way to make income from your developping skills by creating usefull tools for the community.
+                        {_tr("KikExplain1")}<br/>
+                        {_tr("KikExplain2")}<br/>
+                        {_tr("KikExplain3")}<br/>
                         </p>
                     </div>
                 </section>
@@ -70,11 +69,11 @@ export default function Home() {
 
 
                                     <h3 className="fw-bold text-white">
-                                        Non-Mintable
+                                        {_tr("Card1Title")}
                                     </h3>
 
                                     <p className="text-muted mb-0">
-                                        We can &apos; t create new KIK token, the total amount is immutable.
+                                    {_tr("Card1Desc")}
                                     </p>
 
                                 </div>
@@ -89,11 +88,11 @@ export default function Home() {
                                 <div className="card-body p-5 h-50">
 
                                     <h3 className="fw-bold text-white">
-                                        Supply
+                                    {_tr("Card2Title")}
                                     </h3>
 
                                     <p className="text-muted mb-0">
-                                        The KIK was created on the BSC blockchain with a max supply of 100 000 000 KIK.
+                                        {_tr("Card2Desc")}
                                     </p>
 
                                 </div>
@@ -107,10 +106,10 @@ export default function Home() {
                                 </div>
                                 <div className="card-body p-5 h-50">
                                     <h3 className="fw-bold text-white">
-                                        Earnable
+                                        {_tr("Card3Title")}
                                     </h3>
                                     <p className="text-muted mb-0">
-                                        The KIK is earnable by the community who serve the platform.
+                                        {_tr("Card3Desc")}
                                     </p>
 
                                 </div>
@@ -125,13 +124,13 @@ export default function Home() {
                         <div className='text-light row px-10'>
 
                             <h2 className='display-5 fw-bold text-white'>
-                                What is the Ikalas platform ?
+                            {_tr("IkalasExplainTitle")}
                             </h2>
                             <p className="text-muted lead mb-6">
-                                <span className="text-white fw-bold">Create tools. </span> The Ikalas platform allows you to create tools with code and deploy it as a module on the website.
+                                <span className="text-white fw-bold">{_tr("ImportantWord1")}</span>{_tr("IkalasText1")}
                             </p>
                             <p className="text-muted lead mb-7 mb-md-0">
-                                <span className="text-white fw-bold">Use tools. </span> Use the community tools to create whatever you want by the website interface or the developpement interface (coming soon).
+                                <span className="text-white fw-bold">{_tr("ImportantWord2")}</span>{_tr("IkalasText2")}
                             </p>
                             <p className="text-muted lead mb-7 mb-md-0 mt-2">
                                 <a className="text-primary fw-bold" href="https://ikalas.com/app">Ikalas.com</a>
@@ -154,15 +153,15 @@ export default function Home() {
 
 
                                 <h2 className="display-3 fw-bold text-white">
-                                    The KIK Token
+                                    {_tr("StatsTitle")}
                                 </h2>
                                 <h6 className="text-uppercase text-info">
-                                    with numbers
+                                    {_tr("withNumbers")}
                                 </h6>
 
 
                                 <p className="text-muted lead mb-6 mb-md-8">
-                                    We &apos; ve made it easier for thousands of people to build their dream projects.
+                                    {_tr("StatsText1")}
                                 </p>
 
                                 <div className="d-flex justify-content-between MobColumn" >
@@ -171,7 +170,7 @@ export default function Home() {
                                             <span data-countup="{&quot;startVal&quot;: 0}" data-to={nbholder} data-aos="" data-aos-id="countup:in" className="aos-init aos-animate">{nbholder}</span>K
                                         </h1>
                                         <p className="text-gray-700 mb-0">
-                                            holders
+                                            {_tr("Label1")}
                                         </p>
                                     </div>
                                     <div className="">
@@ -179,7 +178,7 @@ export default function Home() {
                                             <span data-countup="{&quot;startVal&quot;: 0}" data-to={nbtransaction} data-aos="" data-aos-id="countup:in" className="aos-init aos-animate">{nbtransaction}</span>K
                                         </h1>
                                         <p className="text-gray-700 mb-0">
-                                            transactions
+                                            {_tr("Label2")}
                                         </p>
                                     </div>
                                     <div className="text-center">
@@ -187,12 +186,12 @@ export default function Home() {
                                             <span data-countup="{&quot;startVal&quot;: &quot;0&quot;}" data-to={tokenPrice} data-aos="" data-aos-id="countup:in" className="aos-init aos-animate">{tokenPrice}</span>$
                                         </h1>
                                         <p className="text-gray-700 mb-0">
-                                            price
+                                            {_tr("Label3")}
                                         </p>
                                     </div>
                                 </div>
                                 <a href="https://bscscan.com/token/0x28E41ccB451F0E813403Cc91Cc49B0ca8178F3f2" target="_blank" rel="noreferrer" className='btn btn-primary mt-10'>
-                                    Discover the contract
+                                    {_tr("DiscoverButton")}
                                 </a>
                             </div>
 
@@ -206,9 +205,9 @@ export default function Home() {
 
                 <section className="py-2 pt-md-12 bg-black text-center text-dark">
                     <div>
-                        <h2 className='display-3 fw-bold text-white'>Token Distribution</h2>
+                        <h2 className='display-3 fw-bold text-white'>{_tr("DistributionTitle")}</h2>
                         <p className="text-muted lead mb-6">
-                            The KIK token is distributed on the Binance SmartChain in the following way :
+                            {_tr("DistributionText1")}
                         </p>
                         <div className='d-flex justify-content-center'>
                             <div className="divchart" data-aos="zoom-in">
@@ -259,7 +258,7 @@ export default function Home() {
 
                 <section className="py-12 pt-md-5 bg-black text-center text-dark" id="News">
                     <div >
-                        <h2 className='display-3 fw-bold text-white'>News</h2>
+                        <h2 className='display-3 fw-bold text-white'>{_tr("NewsTitle")}</h2>
                     </div>
                     <div className="container">
                         <News />

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-
+import { _tr } from "../services/translate"
 
 const Footer = () => {
   return (
@@ -14,7 +14,7 @@ const Footer = () => {
 
 
             <p className="text-gray-700 mb-2">
-              Ikalas offers you apps to get more efficient.
+            {_tr("FooterText")}
             </p>
 
 
