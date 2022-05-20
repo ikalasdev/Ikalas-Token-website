@@ -47,7 +47,7 @@
     "NavLink3": "Statistics",
     "NavLink4": "Roadmap",
     "NavLink5": "News",
-    "LogButton": "Connexion avec MetaMask",
+    "LogButton": "Login with MetaMask",
     "LogButton2": "Connected",
 
 
@@ -72,6 +72,7 @@
     "october": "October",
     "november": "November",
     "december": "December",
+    "futur": "near future",
 
     "FooterText": "Ikalas offers you apps to get more efficient."
 }

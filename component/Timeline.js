@@ -20,7 +20,7 @@ const Timeline = () => {
 
                         <div className="single-timeline-area">
                             <div className="timeline-date wow fadeInLeft anim1" data-wow-delay="0.1s" >
-                                <p>Near Future</p>
+                                <p>{_tr("futur")}</p>
                             </div>
                             <div className="row">
                                 <div className="col-12 col-md-6 col-lg-4">
