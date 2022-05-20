@@ -3,6 +3,7 @@ import Footer from '../component/Footer'
 import Login from '../component/Login'
 import Script from 'next/script'
 import Header from '../component/Header'
+import Link from 'next/link'
 
 import { ThirdwebWeb3Provider } from "@3rdweb/hooks";
 
@@ -29,6 +30,7 @@ function MyApp({ Component, pageProps }) {
       <Component {...pageProps} />
       <Footer />
 
+
       <Script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js' />
       <Script src="./assets/js/vendor.bundle.js" />
       <Script src="./assets/js/theme.bundle.js" />
@@ -36,6 +38,8 @@ function MyApp({ Component, pageProps }) {
       <Script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"/>
       <Script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"/>
       <Script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"/>
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+      
     </ThirdwebWeb3Provider>
 
 
