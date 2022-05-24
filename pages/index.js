@@ -150,7 +150,7 @@ export default function Home() {
 
 
 
-                    <div className='delimiter rotateDiv bg-gradient-dark-black' id="Stats"></div>
+                    <div className='delimiter rotateDiv bg-gradient-dark-black pt-13' id="Stats"></div>
 
                     <section className=" pt-8 pt-md-8 pb-8 bg-dark w-100 d-flex justify-content-around">
                         <div className='container'>
@@ -223,14 +223,14 @@ export default function Home() {
                     </section>
 
                     <section className="timeline_area section_padding_130 py-2 pt-md-12 bg-black text-center text-dark pb-5" id="Roadmap">
-                        <div className="d-flex justify-content-center">
+                        <div className="d-flex justify-content-center ">
                             <Timeline/>
                         </div>
                     </section>
 
 
 
-                    <section className="py-12 pt-md-5 bg-black text-center text-dark" id="News">
+                    <section className="py-12 pt-md-13 bg-black text-center text-dark" id="News">
                         <div >
                             <h2 className='display-3 fw-bold text-white'>{_tr("NewsTitle")}</h2>
                         </div>
