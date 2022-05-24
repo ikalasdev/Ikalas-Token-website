@@ -4,9 +4,12 @@ import React, { PureComponent } from 'react';
 import { data } from '../component/Pie'
 import News from '../component/News'
 import Timeline from '../component/Timeline'
+
 import dynamic from "next/dynamic";
 import { _tr } from "../services/translate"
 import { ScrollToTop } from '../component/ScrollToTop';
+
+
 
 
 
@@ -60,7 +63,8 @@ export default function Home() {
                         </div>
                     </section>
 
-                    <section className="py-5 bg-black text-dark pb-2">
+
+                    <section className="py-5 bg-black text-dark pb-10">
 
                         <div className="container">
                             <div className="row  d-flex justify-content-center">
@@ -125,7 +129,7 @@ export default function Home() {
                     </section>
 
 
-                    <section className="pt-8 pt-md-12 bg-black py-15 d-flex justify-content-center pb-10" id="Ikalas">
+                    <section className="pt-5 pt-md-11 bg-black py-15 d-flex justify-content-center pb-10" id="Ikalas">
                         <div className='customContainer d-flex justify-content-center MobCenterText align-item-row'>
                             <div className='text-light row px-10'>
 
@@ -224,13 +228,42 @@ export default function Home() {
 
                     <section className="timeline_area section_padding_130 py-2 pt-md-12 bg-black text-center text-dark pb-5" id="Roadmap">
                         <div className="d-flex justify-content-center ">
-                            <Timeline/>
+                            <Timeline />
                         </div>
                     </section>
 
+                    <section className="py-14 py-lg-16 VideoSection">
+
+                        <div id="jarallax-container-0" className='VideoContainer'>
+                            <h2 className='VideoTitle text-light'>{_tr("TitleVideo")}</h2>
+                            <video width="100%" loop autoPlay muted>
+                                <source src="./assets/video/pexels-cityxcape-5727833.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+
+                        <div className="shape shape-top shape-fluid-x text-black">
+                            <svg viewBox="0 0 2880 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h2880v125h-720L720 250H0V0z" fill="currentColor"></path>
+                            </svg>
+                        </div>
 
 
-                    <section className="py-12 pt-md-13 bg-black text-center text-dark" id="News">
+                        <div className="shape shape-bottom shape-fluid-x text-black">
+                            <svg viewBox="0 0 2880 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M720 125L2160 0h720v250H0V125h720z" fill="currentColor"></path>
+                            </svg>
+                        </div>
+
+
+
+                        
+                    </section>
+
+                    
+
+                    
+
+                    <section className="py-12 pt-md-10 bg-black text-center text-dark" id="News">
                         <div >
                             <h2 className='display-3 fw-bold text-white'>{_tr("NewsTitle")}</h2>
                         </div>

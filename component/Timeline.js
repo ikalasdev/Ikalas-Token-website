@@ -14,7 +14,7 @@ const Timeline = () => {
                 </div>
             </div>
             <div className="row ">
-                <div className="col-11">
+                <div className="col-13">
 
                     <div className="apland-timeline-area">
 
