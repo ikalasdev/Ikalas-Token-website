@@ -1609,11 +1609,6 @@ color-name@~1.1.4:
   resolved "https://registry.npmjs.org/color-name/-/color-name-1.1.4.tgz"
   integrity sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==
 
-compass-mixins@^0.12.11:
-  version "0.12.11"
-  resolved "https://registry.npmjs.org/compass-mixins/-/compass-mixins-0.12.11.tgz"
-  integrity sha512-Wyjh0EHkOhOZsZ4a2OE67yDRzzhAy2EyX5OntVLwGxpxrXGDWLZgqMm639/uGrjzUuAn6qAya+PbO/SBLxE/jA==
-
 concat-map@0.0.1:
   version "0.0.1"
   resolved "https://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz"
@@ -1885,18 +1880,6 @@ elliptic@6.5.4, elliptic@^6.5.2, elliptic@^6.5.4:
     inherits "^2.0.4"
     minimalistic-assert "^1.0.1"
     minimalistic-crypto-utils "^1.0.1"
-
-embla-carousel-react@^6.2.0:
-  version "6.2.0"
-  resolved "https://registry.npmjs.org/embla-carousel-react/-/embla-carousel-react-6.2.0.tgz"
-  integrity sha512-XshB7pmmhso/fzENefflWw5/N3HqCjO8H5CkzQxuCQqV9w+bvEaBkjUZ6fxfqLUMMSKFWIQvMD6uo9f8oKS+2g==
-  dependencies:
-    embla-carousel "6.2.0"
-
-embla-carousel@6.2.0:
-  version "6.2.0"
-  resolved "https://registry.npmjs.org/embla-carousel/-/embla-carousel-6.2.0.tgz"
-  integrity sha512-dSNsiQ7nmSQJZgbYfZCLdzrnznHwpaAcdJFcMRKgm/pjH1doOgxmfsvlMy4VfO4J11hLz8jm/W8WxSSDqfuu4w==
 
 emoji-regex@^7.0.1:
   version "7.0.3"
