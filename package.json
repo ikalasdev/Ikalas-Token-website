@@ -14,10 +14,10 @@
     "@nivo/line": "^0.79.1",
     "@nivo/pie": "^0.79.1",
     "i18next": "^21.8.3",
+    "js-cookie": "^3.0.1",
     "keen-slider": "^6.6.13",
     "next": "12.1.6",
     "react": "^17.0.2",
-    "react-cookie": "^4.1.1",
     "react-dom": "^17.0.2",
     "react-i18next": "^11.16.9",
     "react-icons": "^4.3.1"

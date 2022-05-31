@@ -1,34 +1,58 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/router"
-import { useCookies } from 'react-cookie';
+import { useState } from "react";
+import { _tr } from "../services/translate"
+import { useRouter } from "next/router";
+import Cookie from "js-cookie";
+
 
 
 
 const LanguageButton = () => {
-    const [ cookie, setCookie ] = useCookies(['NEXT_LOCALE']);
+    const [menu, setMenu] = useState(false);
     const router = useRouter();
-    const { locale } = router;
-  
-    const switchLanguage = (e) => {
-      const locale = e.target.value;
-      router.push('/','/', { locale });
-      if(cookie.NEXT_LOCALE !== locale){
-        setCookie("NEXT_LOCALE", locale, { path: "/" });
-      }
-    } 
+
+    const changeLocale = (locale) => {
+        window.localStorage.setItem("lang", locale);
+        Cookie.set("userLocale", locale);
+        router.push(router.asPath, router.asPath, {
+          locale,
+        });
+        setMenu(false);
+      };
 
     return (
-        <div className="d-flex align-items-center justify-center min-h-screen py-2 mx-5 lang-buttonMob">
-            <select
-                className="btn btn-outline-dark d-flex align-items-center text-light px-2 py-1 border-1 border-light rounded"
-                onChange={switchLanguage}
-                defaultValue={locale}
+        <div
+            className={menu ? "dropdown show" : "dropdown"}
+            style={{ zIndex: "1" }}
+          >
+            <button
+              className="btn btn-xs dropdown-toggle text-light"
+              type="button"
+              onClick={() => setMenu(!menu)}
+              id="dropdownMenuExtraSmall"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
             >
-                <option value="en" className="bg-dark">EN</option>
-                <option value="fr" className="bg-dark">FR</option>
-            </select>
-        </div>
+              {_tr(router.locale)}
+            </button>
+            <div
+              className={
+                menu
+                  ? "dropdown-menu dropdown-menu-xs show bg-dark"
+                  : "dropdown-menu dropdown-menu-xs bg-dark"
+              }
+              aria-labelledby="dropdownMenuExtraSmall"
+            >
+              <a onClick={() => changeLocale("en")} className="dropdown-item text-light">
+                English
+              </a>
+              <a onClick={() => changeLocale("fr")} className="dropdown-item text-light">
+                Français
+              </a>
+            </div>
+          </div>
     );
 };
 

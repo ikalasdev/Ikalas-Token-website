@@ -52,7 +52,6 @@ const Navbar = () => {
       
       <div className='mx-5 position-absolute end-0 d-flex justify-content-center align-item-center'>
         <LanguageButton />
-        <Login />
       </div>
     </nav>
   );
