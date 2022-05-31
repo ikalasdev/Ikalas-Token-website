@@ -50,8 +50,9 @@ const Navbar = () => {
       </div>
 
       
-      <div className='mx-5 position-absolute end-0 d-flex justify-content-center align-item-center'>
+      <div className='mx-5 position-absolute end-0 d-flex justify-content-center align-items-center'>
         <LanguageButton />
+        <Login/>
       </div>
     </nav>
   );

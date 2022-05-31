@@ -227,8 +227,11 @@ export default function Home() {
                         </div>
                     </section>
 
-                    <section className="timeline_area section_padding_130 py-2 pt-md-12 bg-black text-center text-dark pb-5" id="Roadmap">
-                        <div className="d-flex justify-content-center ">
+                    <section className="py-2 pt-md-12 bg-black text-center text-dark pb-5" id="Roadmap">
+                        <div>
+                            <h2 className='display-3 fw-bold text-white pb-8'>{_tr("RoadmapTitle")}</h2>
+                        </div>
+                        <div className="container d-flex justify-content-center">
                             <Timeline />
                         </div>
                     </section>
