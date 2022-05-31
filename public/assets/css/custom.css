@@ -392,36 +392,3 @@ body {
 .anim4{
     visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;
 }
-
-
-/*Class for Video*/
-.VideoSection{
-    background-image: none;
-    position: relative;
-    z-index: 0;
-    background-color: #000;
-    
-}
-
-
-.VideoInsideContainer
-{
-    background-position: 50% 50%; background-size: cover; background-repeat: no-repeat; background-image: url("https://landkit.goodthemes.co/assets/img/covers/cover-19.jpg"); position: absolute; top: -50px; left: 0px; width: 100%; height: 820.8px; overflow: hidden; pointer-events: none; transform-style: preserve-3d; backface-visibility: hidden; will-change: transform, opacity; margin-top: 41.6px; transform: translate3d(0px, -16.1906px, 0px);
-    
-}
-
-.VideoContainer
-{
-    position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; z-index: -100;
-    
-}
-.VideoTitle
-{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size : 50px;
-    
-}
-

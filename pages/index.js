@@ -8,6 +8,7 @@ import Timeline from '../component/Timeline'
 import dynamic from "next/dynamic";
 import { _tr } from "../services/translate"
 import { ScrollToTop } from '../component/ScrollToTop';
+import { Translation } from 'react-i18next';
 
 
 
@@ -232,31 +233,27 @@ export default function Home() {
                         </div>
                     </section>
 
-                    <section className="py-14 py-lg-16 VideoSection">
+                    <section style={{position:"relative", overflow:'hidden', maxHeight:"800px"}} className="bg-black">
 
-                        <div id="jarallax-container-0" className='VideoContainer'>
-                            <h2 className='VideoTitle text-light'>{_tr("TitleVideo")}</h2>
-                            <video width="100%" loop autoPlay muted>
+                            <div className="shape shape-top shape-fluid-x text-black">
+                                <svg viewBox="0 0 2880 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0h2880v125h-720L720 250H0V0z" fill="currentColor"></path>
+                                </svg>
+                            </div>
+                            
+                            <h2 className='position-absolute text-white text-center' style={{top:"50%",left:"50%", transform:"translate(-50%,-50%)", fontSize:"35px"}}>{_tr("TitleVideo")}</h2>
+                            <video style={{width:"100%"}}  loop autoPlay muted>
                                 <source src="./assets/video/pexels-henry-5538825.mp4" type="video/mp4" />
                             </video>
-                        </div>
+                            
 
-                        <div className="shape shape-top shape-fluid-x text-black">
-                            <svg viewBox="0 0 2880 250" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0 0h2880v125h-720L720 250H0V0z" fill="currentColor"></path>
-                            </svg>
-                        </div>
+                            <div className="shape shape-bottom shape-fluid-x text-black ">
+                                <svg viewBox="0 0 2880 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M720 125L2160 0h720v250H0V125h720z" fill="currentColor"></path>
+                                </svg>
+                            </div>
 
-
-                        <div className="shape shape-bottom shape-fluid-x text-black">
-                            <svg viewBox="0 0 2880 250" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M720 125L2160 0h720v250H0V125h720z" fill="currentColor"></path>
-                            </svg>
-                        </div>
-
-
-
-                        
+ 
                     </section>
 
                     
@@ -271,6 +268,7 @@ export default function Home() {
                             <News />
                         </div>
                     </section>
+
 
                     <div className="position-relative">
                         <div className="shape shape-bottom shape-fluid-x text-dark">
