@@ -4,11 +4,13 @@ import React, { PureComponent } from 'react';
 import { data } from '../component/Pie'
 import News from '../component/News'
 import Timeline from '../component/Timeline'
+import AddKIK from '../component/Addkik'
 
 import dynamic from "next/dynamic";
 import { _tr } from "../services/translate"
 import { ScrollToTop } from '../component/ScrollToTop';
 import { Translation } from 'react-i18next';
+import Addkik from '../component/Addkik';
 
 
 
@@ -269,6 +271,12 @@ export default function Home() {
                         </div>
                         <div className="container">
                             <News />
+                        </div>
+                    </section>
+
+                    <section className="py-12 pt-md-10 bg-black text-center text-dark" id="News">
+                        <div className="container">
+                            <Addkik />
                         </div>
                     </section>
 

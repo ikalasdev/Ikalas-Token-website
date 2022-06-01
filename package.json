@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@3rdweb/hooks": "^1.9.2",
+    "@ethersproject/bignumber": "^5.6.2",
     "@nivo/core": "^0.79.0",
     "@nivo/line": "^0.79.1",
     "@nivo/pie": "^0.79.1",
