@@ -37,6 +37,7 @@ async function addToken()
             console.log('HelloWorld Coin has not been added');
         }
     } catch (error) {
+        alert("An error occurred. Are you sure you have the metamask extension?");
         console.log(error);
     }
 }
@@ -45,7 +46,7 @@ async function addToken()
   return (
     <>
     <div>
-        <button onClick={addToken} className="AddButton">Add KIK to MetaMask</button>
+        <button onClick={addToken} className="AddButton">{_tr("ButtonAddKIK")}</button>
     </div>
     </>
   );

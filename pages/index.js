@@ -13,10 +13,6 @@ import { Translation } from 'react-i18next';
 import Addkik from '../component/Addkik';
 
 
-
-
-
-
 const MyResponsivePie = dynamic(() => import('../component/Pie'), { ssr: false })
 
 

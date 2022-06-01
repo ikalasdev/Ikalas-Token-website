@@ -73,6 +73,9 @@
     "december": "Décembre",
     "futur": "Futur Proche",
 
+    "ButtonAddKIK" : "Ajouter KIK à Metamask",
+    "ErrorAddKIK" : "Une erreur est survenue, êtes-vous sur d'avoir l'extension metamask?",
+
     "FooterText": "Ikalas vous propose des applications pour gagner en efficacité."
     
 

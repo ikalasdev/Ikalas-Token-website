@@ -76,6 +76,9 @@
     "december": "December",
     "futur": "Near Future",
 
+    "ButtonAddKIK" : "Add KIK to metamask",
+    "ErrorAddKIK" : "An error occurred. Are you sure you have the metamask extension?",
+
     "FooterText": "Ikalas offers you apps to get more efficient."
 }
   
