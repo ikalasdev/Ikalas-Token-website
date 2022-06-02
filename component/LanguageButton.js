@@ -27,7 +27,7 @@ const LanguageButton = () => {
             style={{ zIndex: "1" }}
           >
             <button
-              className="btn btn-xs dropdown-toggle text-light"
+              className="btn btn-xs dropdown-toggle"
               type="button"
               onClick={() => setMenu(!menu)}
               id="dropdownMenuExtraSmall"
@@ -45,10 +45,10 @@ const LanguageButton = () => {
               }
               aria-labelledby="dropdownMenuExtraSmall"
             >
-              <a onClick={() => changeLocale("en")} className="dropdown-item text-light">
+              <a onClick={() => changeLocale("en")} className="dropdown-item">
                 English
               </a>
-              <a onClick={() => changeLocale("fr")} className="dropdown-item text-light">
+              <a onClick={() => changeLocale("fr")} className="dropdown-item">
                 Français
               </a>
             </div>

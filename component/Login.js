@@ -10,14 +10,14 @@ const Login = () => {
     <div className="flex flex-col align-items-center justify-center min-h-screen py-2 bg-slate-100 MobDnone">
       {address ? (
         <div 
-        className="btn btn-outline-dark d-flex align-items-center text-light px-2 py-1 border-2 border-light rounded"
+        className="btn d-flex align-items-center px-2 py-1 rounded"
         >
           <span className="glowing-circle mx-1"></span>
           <span className="mx-2">{_tr("LogButton2")}</span>
         </div>
       ) : (
         <div type="button" 
-        className="btn btn-outline-dark d-flex align-items-center text-light px-2 py-1 border-2 border-light rounded MobDnone"
+        className="btn btn-outline-transparent  d-flex align-items-center  px-2 py-1 rounded MobDnone"
         onClick={()=>connectWallet("injected")}>
 
           <Image src="/images/metamask.svg" width={20} height={20}/> 

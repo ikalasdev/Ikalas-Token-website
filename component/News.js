@@ -24,24 +24,24 @@ const News = () => {
             <div className="navigation-wrapper">
                 <div ref={sliderRef} className="keen-slider">
                     <div className="keen-slider__slide number-slide1 d-flex flex-column justify-content-center">
-                        <h3 className="display-5 fw-bold">20/05/2022</h3>
-                        <span className="text-muted lead">{_tr("NewsText1")}</span>
+                        <h3 className="display-5 fw-bold text-dark">20/05/2022</h3>
+                        <span className="text-muted lead" style={{fontSize:"25px"}}>{_tr("NewsText1")}</span>
                     </div>
                     <div className="keen-slider__slide number-slide2 d-flex flex-column justify-content-center">
-                        <h3 className="display-5 fw-bold">05/2022</h3>
-                        <span className="text-muted lead">{_tr("NewsText2")}</span>
+                        <h3 className="display-5 fw-bold text-dark">05/2022</h3>
+                        <span className="text-muted lead" style={{fontSize:"25px"}}>{_tr("NewsText2")}</span>
                     </div>
                     <div className="keen-slider__slide number-slide3  d-flex flex-column justify-content-center">
-                        <h3 className="display-5 fw-bold">12/2021</h3>
-                        <span className="text-muted lead">{_tr("NewsText3")}</span>
+                        <h3 className="display-5 fw-bold text-dark">12/2021</h3>
+                        <span className="text-muted lead" style={{fontSize:"25px"}}>{_tr("NewsText3")}</span>
                     </div>
                     <div className="keen-slider__slide number-slide4  d-flex flex-column justify-content-center">
-                        <h3 className="display-5 fw-bold">07/2021</h3>
-                        <span className="text-muted lead">{_tr("NewsText4")}</span>
+                        <h3 className="display-5 fw-bold text-dark">07/2021</h3>
+                        <span className="text-muted lead" style={{fontSize:"25px"}}>{_tr("NewsText4")}</span>
                     </div>
                     <div className="keen-slider__slide number-slide5  d-flex flex-column justify-content-center">
-                        <h3 className="display-5 fw-bold">01/2021</h3>
-                        <span className="text-muted lead">{_tr("NewsText5")}</span>
+                        <h3 className="display-5 fw-bold text-dark">01/2021</h3>
+                        <span className="text-muted lead" style={{fontSize:"25px"}}>{_tr("NewsText5")}</span>
                     </div>
                 </div>
                 {loaded && instanceRef.current && (
@@ -92,10 +92,11 @@ function Arrow(props) {
     return (
         <svg
             onClick={props.onClick}
-            className={`arrow ${props.left ? "arrow--left MobDnone" : "arrow--right MobDnone"
+            className={`arrow ${props.left ? "arrow--left MobDnone ArrowColor" : "arrow--right MobDnone ArrowColor"
                 } ${disabeld}`}
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
+            
         >
             {props.left && (
                 <path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z" />

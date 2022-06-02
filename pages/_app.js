@@ -4,13 +4,14 @@ import Login from '../component/Login'
 import Script from 'next/script'
 import Header from '../component/Header'
 import Link from 'next/link'
+import { ThemeProvider } from 'next-themes'
 
 import { ThirdwebWeb3Provider } from "@3rdweb/hooks";
 
 
 import "regenerator-runtime/runtime";
 import "../public/assets/css/custom.css";
-import "../public/assets/css/news.css";
+import "../public/assets/css/override.css";
 
 
 function MyApp({ Component, pageProps }) {
@@ -21,6 +22,7 @@ function MyApp({ Component, pageProps }) {
   };
 
   return (
+    <ThemeProvider enableSystem={true}>
     <ThirdwebWeb3Provider
       supportedChainIds={supportedChainIds}
       connectors={connectors}
@@ -41,8 +43,7 @@ function MyApp({ Component, pageProps }) {
       <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>      
       
     </ThirdwebWeb3Provider>
-
-
+    </ThemeProvider>
   )
 }
 

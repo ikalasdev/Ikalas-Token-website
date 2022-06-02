@@ -150,7 +150,7 @@ body {
     border: none;
     width: 10px;
     height: 10px;
-    background: #fff;
+    background: var(--bs-gray);
     border-radius: 50%;
     margin: 0 5px;
     padding: 5px;
@@ -162,7 +162,7 @@ body {
 }
 
 .dot.active {
-    background: #1B2A4E;
+    background: var(--bs-dark);
 }
 
 .arrow {
@@ -206,24 +206,7 @@ body {
 }
 
 
-.NavBarBG {
-    /* How it will look before scrolled */
-    position: fixed;
-    background-color: transparent !important;
 
-    /* To give smoote change */
-    -webkit-transition: all ease-out .5s;
-    -moz-transition: all ease-out .5s;
-    -o-transition: all ease-out .5s;
-    transition: all ease-out .5s;
-}
-
-.NavBarBG.scrolled {
-    /* How it will look when scrolled */
-    background-color: #161C2D !important;
-    border-bottom: 1px solid #a1a1a1 !important;
-
-}
 
 @media only screen and (max-width: 1300px) {
     .lang-buttonMob {

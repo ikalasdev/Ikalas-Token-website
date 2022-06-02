@@ -3,7 +3,7 @@ import { _tr } from "../services/translate"
 
 const Footer = () => {
   return (
-    <footer className='bg-gradient-dark-black py-5 pt-md-8 text-light'>
+    <footer className='bgGradiant py-5 pt-md-8'>
 
       <div className="container">
         <div className="d-flex justify-content-center text-center">
@@ -13,7 +13,7 @@ const Footer = () => {
             <img src="/images/logo_bgLess.png" alt="logo" width={85} height={85} />
 
 
-            <p className="text-gray-700 mb-2">
+            <p className="text-primary mb-2">
             {_tr("FooterText")}
             </p>
 
