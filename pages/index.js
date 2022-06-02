@@ -1,6 +1,6 @@
 
 import Image from 'next/image'
-import React, { PureComponent } from 'react';
+import React, { PureComponent} from 'react';
 import { data } from '../component/Pie'
 import News from '../component/News'
 import Timeline from '../component/Timeline'
@@ -11,6 +11,8 @@ import { _tr } from "../services/translate"
 import { ScrollToTop } from '../component/ScrollToTop';
 import { Translation } from 'react-i18next';
 import Addkik from '../component/Addkik';
+import { useTheme } from "next-themes";
+import { useState, useEffect } from 'react';
 
 
 const MyResponsivePie = dynamic(() => import('../component/Pie'), { ssr: false })
@@ -23,7 +25,17 @@ export default function Home() {
     const nbtransaction = 1.3;
     const tokenPrice = 0.00;
 
+    const { theme } = useTheme();
 
+    useEffect(() => {
+        if (theme === "dark") {
+            console.log("test")
+            document.getElementById("mainLogo").src = "/images/logo_bgLess_border.png";
+            console.log(document.getElementById("mainLogo").src)
+        } else {
+            document.getElementById("mainLogo").src = "/images/blackIkalas_border.png";
+        }
+    });
 
 
     return (
@@ -33,7 +45,7 @@ export default function Home() {
                     <section className="mt-n15 pt-15 pb-15 bg-white bg-pattern-1 text-center">
 
                         <div className='mt-15'>
-                            <Image src="/images/logo_bgLess_border.png" alt="Kik" width={120} height={115} />
+                            <Image id="mainLogo" src="/images/logo_bgLess_border.png" alt="Kik" width={120} height={115} />
                         </div>
 
                         <h2 className='mt-5'>

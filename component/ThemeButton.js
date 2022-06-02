@@ -1,6 +1,7 @@
 import { useTheme } from "next-themes";
 
 
+
 const ThemeButton = () => {
 
     const { theme, setTheme } = useTheme();
@@ -11,7 +12,7 @@ const ThemeButton = () => {
 
     return (
         <button className="btn btn-xs" onClick={toggleTheme}>
-            Theme
+            <i class="fe fe-moon font-size-lg"></i>
         </button>
     );
 };

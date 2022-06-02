@@ -16,7 +16,10 @@
   --bs-badge-primary-bg: #335eea;
   --bs-badge-primary-color: #fff;
 }
-
+.moonColor
+{
+  fill: var(--bs-white);
+}
 .bgGradiant{
   background-image: linear-gradient(to bottom, var(--bs-light), var(--bs-white)) !important;
 }
