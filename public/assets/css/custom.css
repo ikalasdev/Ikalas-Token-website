@@ -94,6 +94,19 @@ body {
 
 }
 
+.VideoIcons {
+    width: 30px;
+    height: 30px;
+}
+
+@media only screen and (max-width: 500px) {
+    .VideoIcons {
+        width: 15px;
+        height: 15px;
+    }
+
+}
+
 
 
 
