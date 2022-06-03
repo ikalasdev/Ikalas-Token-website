@@ -60,6 +60,25 @@
     "RoadmapText6": "Creation of multisender on BSC and ETH networks on Ikalas",
     "RoadmapText7": "Launch of the beta version of the Ikalas website",
 
+    "AppsTitle": "Blockchain Apps",
+    "AppsSectionDesc": "Here are the main apps that are using the blockchain technologie on Ikalas.",
+    "Apps1Title": "BSC Token Multisender",
+    "Apps1Desc": "The BSC token multisender allows you to send tokens to multiple addresses.",
+    "Apps2Title": "Matic Token Multisender",
+    "Apps2Desc": "Send tokens to multiple addresses on the Polygon blockchain.",
+    "Apps3Title": "BSC Batch Wallet Generator",
+    "Apps3Desc": "Generate wallets in batch on the Binance Smart Chain.",
+    "Apps4Title": "ETH Token Multisender",
+    "Apps4Desc": "Send ETH or ERC20 tokens to multiple addresses in single transaction.",
+    "Apps5Title": "HECO Wallet Generator",
+    "Apps5Desc": "Generate wallets in batch on Huobi ECO Chain",
+    "Apps6Title": "BEP20 Faucet",
+    "Apps6Desc": "Claim free Binance BEP20 token faucet to use on Testnet.",
+    "Apps7Title": "ETH Wallet Generator",
+    "Apps7Desc": "With this tool, you can generate wallets in batch on Ethereum.",
+
+
+
     "TitleVideo": "Join the Ikalas community",
 
     "january": "January",

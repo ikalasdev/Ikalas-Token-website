@@ -12,6 +12,8 @@ import { ThirdwebWeb3Provider } from "@3rdweb/hooks";
 import "regenerator-runtime/runtime";
 import "../public/assets/css/custom.css";
 import "../public/assets/css/override.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 
 function MyApp({ Component, pageProps }) {

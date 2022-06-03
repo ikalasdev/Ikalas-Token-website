@@ -35,7 +35,7 @@
   fill: var(--bs-dark);
 }
 .FadeDivUp{
-  background-image: linear-gradient(to top, var(--bs-white), var(--bs-primary)) !important;
+  background-image: linear-gradient(to top, var(--bs-white), var(--bs-light)) !important;
 }
 
 

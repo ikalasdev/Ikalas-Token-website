@@ -304,3 +304,19 @@ svg {
 .DisabledPointer{
     pointer-events: none;
 }
+
+.carrouselArrow {
+    color: var(--bs-dark);
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: var(--bs-dark) !important;
+}
+
+.slick-dots li.slick-active button:before {
+    color: var(--bs-black) !important;
+}
+.slick-dots li button:before {
+    color: var(--bs-dark) !important;
+}

@@ -57,6 +57,23 @@
     "RoadmapText6": "Création du multisender sur les réseaux BSC et ETH sur Ikalas",
     "RoadmapText7": "Lancement de la version beta du site Ikalas",
 
+    "AppsTitle": "Applications Blockchain",
+    "AppsSectionDesc": "Voici les principales applications qui utilisent la technologie blockchain sur Ikalas.",
+    "Apps1Title": "Multi-expéditeur BSC",
+    "Apps1Desc": "Le multi-expéditeur de jetons BSC vous permet d'envoyer des jetons à plusieurs adresses.",
+    "Apps2Title": "Matic Token Multi-expéditeur",
+    "Apps2Desc": "Envoyer des jetons à plusieurs adresses sur la blockchain Polygon.",
+    "Apps3Title": "Générateur de portefeuille BSC Batch",
+    "Apps3Desc": "Générer des portefeuilles par lots sur la Binance Smart Chain.",
+    "Apps4Title": "Multi-expéditeur de jeton ETH",
+    "Apps4Desc": "Envoyez des jetons ETH ou ERC20 à plusieurs adresses en une seule transaction.",
+    "Apps5Title": "Générateur de portefeuille HECO",
+    "Apps5Desc": "Générer des portefeuilles par lots sur Huobi ECO Chain",
+    "Apps6Title": "Robinet BEP20",
+    "Apps6Desc": "Récupérez des jetons BEP20 gratuitement à utiliser sur le testnet Binance.",
+    "Apps7Title": "Générateur de portefeuille ETH",
+    "Apps7Desc": "Avec cet outil, vous pouvez générer des portefeuilles par lots sur Ethereum.",
+
     "TitleVideo": "Rejoignez la communauté Ikalas",
 
     "january": "Janvier",

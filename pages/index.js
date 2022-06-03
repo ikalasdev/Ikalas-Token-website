@@ -1,10 +1,11 @@
-
 import Image from 'next/image'
 import React, { PureComponent, useEffect} from 'react';
 import { data } from '../component/Pie'
 import News from '../component/News'
 import Timeline from '../component/Timeline'
 import AddKIK from '../component/Addkik'
+import IkalasApps from '../component/IkalasApps'
+
 
 import dynamic from "next/dynamic";
 import { _tr } from "../services/translate"
@@ -190,50 +191,50 @@ export default function Home() {
 
                     <div className='delimiter rotateDiv FadeDivUp pt-13' id="Stats"></div>
 
-                    <section className=" pt-8 pt-md-8 pb-8 bg-primary w-100 d-flex justify-content-around">
+                    <section className=" pt-8 pt-md-8 pb-8 w-100 d-flex justify-content-around bg-light">
                         <div className='container'>
                             <div className="d-flex justify-content-center text-center">
                                 <div className="col-12 col-md-8 col-lg-6">
 
-                                    <h2 className="display-3 fw-bold" style={{color:"white"}}>
+                                    <h2 className="display-3 fw-bold">
                                         {_tr("StatsTitle")}
                                     </h2>
-                                    <h6 className="text-uppercase" style={{color:"#ABBCD8"}}>
+                                    <h6 className="text-uppercase">
                                         {_tr("withNumbers")}
                                     </h6>
 
 
-                                    <p className="lead mb-6 mb-md-8" style={{color:"white"}}>
+                                    <p className="lead mb-6 mb-md-8">
                                         {_tr("StatsText1")}
                                     </p>
 
                                     <div className="d-flex justify-content-between MobColumn" >
                                         <div>
-                                            <h1 className="fw-bold mb-0" style={{color:"white"}}>
+                                            <h1 className="fw-bold mb-0">
                                                 <span data-countup="{&quot;startVal&quot;: 0}" data-to={nbholder} data-aos="" data-aos-id="countup:in" className="aos-init aos-animate">{nbholder}</span>K
                                             </h1>
-                                            <p className="mb-0" style={{color:"white"}}>
+                                            <p className="mb-0">
                                                 {_tr("Label1")}
                                             </p>
                                         </div>
                                         <div className="">
-                                            <h1 className="fw-bold mb-0" style={{color:"white"}}>
+                                            <h1 className="fw-bold mb-0">
                                                 <span data-countup="{&quot;startVal&quot;: 0}" data-to={nbtransaction} data-aos="" data-aos-id="countup:in" className="aos-init aos-animate">{nbtransaction}</span>K
                                             </h1>
-                                            <p className="mb-0" style={{color:"white"}}>
+                                            <p className="mb-0">
                                                 {_tr("Label2")}
                                             </p>
                                         </div>
                                         <div className="text-center">
-                                            <h1 className="fw-bold mb-0" style={{color:"white"}}>
+                                            <h1 className="fw-bold mb-0">
                                                 <span data-countup="{&quot;startVal&quot;: &quot;0&quot;}" data-to={tokenPrice} data-aos="" data-aos-id="countup:in" className="aos-init aos-animate">{tokenPrice}</span>$
                                             </h1>
-                                            <p className="mb-0" style={{color:"white"}}>
+                                            <p className="mb-0">
                                                 {_tr("Label3")}
                                             </p>
                                         </div>
                                     </div>
-                                    <a href="https://bscscan.com/token/0x28E41ccB451F0E813403Cc91Cc49B0ca8178F3f2" target="_blank" rel="noreferrer" className='btn btn-info mt-10' style={{color:"white"}}>
+                                    <a href="https://bscscan.com/token/0x28E41ccB451F0E813403Cc91Cc49B0ca8178F3f2" target="_blank" rel="noreferrer" className='btn btn-primary mt-10' style={{color:"white"}}>
                                         {_tr("DiscoverButton")}
                                     </a>
                                 </div>
@@ -266,6 +267,14 @@ export default function Home() {
                         </div>
                         <div className="container d-flex justify-content-center">
                             <Timeline />
+                        </div>
+                    </section>
+
+                    <section className="py-2 pt-md-12 bg-white text-center pb-5" id="Apps">
+                        <h2 className='display-3 fw-bold '>{_tr("AppsTitle")}</h2>
+                        <p className="text-muted lead mb-6">{_tr("AppsSectionDesc")}</p>
+                        <div className='pt-5 pb-8'>
+                            <IkalasApps/>
                         </div>
                     </section>
 
