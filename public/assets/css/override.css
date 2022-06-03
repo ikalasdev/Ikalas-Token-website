@@ -17,6 +17,11 @@
   --bs-badge-primary-color: #fff;
 }
 
+.mediaColor {
+  fill: #869AB8;
+  width: 25px;
+}
+
 .statsBG {
   background-color: #7C69EF;
 }

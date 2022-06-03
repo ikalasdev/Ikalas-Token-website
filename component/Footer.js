@@ -33,7 +33,10 @@ const Footer = () => {
               </li>
               <li className="list-inline-item list-social-item">
                 <a href="https://www.youtube.com/channel/UChkbRu3hQUNKdbKymsIQtzQ" className="text-decoration-none">
-                  <img src="./assets/img/icons/social/youtube.svg" className="list-social-icon" alt="..." width={20} height={20} />
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style={{ enableBackground: "new 0 0 512 512" }} className='VideoIcons mediaColor'>
+                    <path d="M507 146s-6-38-21-55c-19-22-41-22-51-23-71-5-179-6-179-6s-108 1-179 6c-10 1-32 2-51 23-16 17-21 55-21 55s-5 45-5 90v41c0 45 5 89 5 89s6 38 21 55c19 22 45 21 56 24 41 4 174 5 174 5s108 0 179-6c10-1 32-2 51-23 15-17 21-55 21-55s5-45 5-89v-41c0-45-5-90-5-90" />
+                    <path style={{ fill: "#1b2a4e" }} d="M194 167v191l168-93z" />
+                  </svg>
                 </a>
               </li>
               <li className="list-inline-item list-social-item">
