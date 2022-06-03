@@ -23,7 +23,9 @@ const Navbar = () => {
   return (
     <nav className="navbar MobNavbarPos fixed-top navbar-expand-lg border-bottom-1 d-flex justify-content-around NavBarBG">
       <div className='mx-5 d-flex align-item-center position-absolute start-0'>
-        <Image src="/images/logo_bgLess.png" className='rounded-circle' width={50} height={50} />
+        <svg viewBox="0 0 3267 3021" xmlns="http://www.w3.org/2000/svg" className='logoColor' width={50} style={{ fillRule: "evenodd", clipRule: "evenodd", strokeLinejoin: "round", strokeMiterlimit: "2" }}>
+          <path d="m2058 254-900 1142 413 346-992 929 1054-808 1038 858S1341 1376 1342 1375l716-1121Zm-450 1521 25 17-258 200 233-217Zm-162-654-213 266 263 221-221-225 171-262Z" />
+        </svg>
         <span className="navbar-brand mx-2 mt-2" width={50} height={50}>KIK</span>
       </div>
 

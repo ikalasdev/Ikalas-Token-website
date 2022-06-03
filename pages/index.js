@@ -11,8 +11,7 @@ import { _tr } from "../services/translate"
 import { ScrollToTop } from '../component/ScrollToTop';
 import { Translation } from 'react-i18next';
 import Addkik from '../component/Addkik';
-import { useTheme } from "next-themes";
-import { useState, useEffect } from 'react';
+
 
 
 const MyResponsivePie = dynamic(() => import('../component/Pie'), { ssr: false })
@@ -25,18 +24,6 @@ export default function Home() {
     const nbtransaction = 1.3;
     const tokenPrice = 0.00;
 
-    const { theme } = useTheme();
-
-    useEffect(() => {
-        if (theme === "dark") {
-            console.log("test")
-            document.getElementById("mainLogo").src = "/images/logo_bgLess_border.png";
-            console.log(document.getElementById("mainLogo").src)
-        } else {
-            document.getElementById("mainLogo").src = "/images/blackIkalas_border.png";
-        }
-    });
-
 
     return (
         <>
@@ -45,7 +32,11 @@ export default function Home() {
                     <section className="mt-n15 pt-15 pb-15 bg-white bg-pattern-1 text-center">
 
                         <div className='mt-15'>
-                            <Image id="mainLogo" src="/images/logo_bgLess_border.png" alt="Kik" width={120} height={115} />
+                            <svg viewBox="0 0 3267 3021" xmlns="http://www.w3.org/2000/svg" className='logoColor' width={150} style={{fillRule:"evenodd",clipRule:"evenodd",strokeLinecap:"round",strokeLinejoin:"round",strokeMiterlimit:"1.5"}}>
+                                <path d="M1627 0a1511 1511 0 1 1-1 3022 1511 1511 0 0 1 1-3022Zm2 29c821 0 1488 662 1488 1477s-667 1477-1488 1477S142 2321 142 1506 808 29 1629 29Z" />
+                                <path d="m2008 292-800 1008 367 300-863 821 925-713 909 754-1167-1183 629-987Zm-396 1337 21 17-225 179 204-196Zm-150-575-183 238 242 200-204-205 145-233Z" />
+                            </svg>
+
                         </div>
 
                         <h2 className='mt-5'>
@@ -210,7 +201,7 @@ export default function Home() {
                                             </p>
                                         </div>
                                     </div>
-                                    <a href="https://bscscan.com/token/0x28E41ccB451F0E813403Cc91Cc49B0ca8178F3f2" target="_blank" rel="noreferrer" className='btn btn-dark mt-10' style={{color:"white"}}>
+                                    <a href="https://bscscan.com/token/0x28E41ccB451F0E813403Cc91Cc49B0ca8178F3f2" target="_blank" rel="noreferrer" className='btn btn-info mt-10' style={{color:"white"}}>
                                         {_tr("DiscoverButton")}
                                     </a>
                                 </div>

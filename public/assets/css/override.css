@@ -16,6 +16,14 @@
   --bs-badge-primary-bg: #335eea;
   --bs-badge-primary-color: #fff;
 }
+
+.statsBG {
+  background-color: #7C69EF;
+}
+
+.logoColor {
+  fill: var(--bs-black);
+}
 .moonColor
 {
   fill: var(--bs-white);

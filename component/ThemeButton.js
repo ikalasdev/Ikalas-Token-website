@@ -12,7 +12,7 @@ const ThemeButton = () => {
 
     return (
         <button className="btn btn-xs" onClick={toggleTheme}>
-            <i class="fe fe-moon font-size-lg"></i>
+            <i className="fe fe-moon font-size-lg"></i>
         </button>
     );
 };
