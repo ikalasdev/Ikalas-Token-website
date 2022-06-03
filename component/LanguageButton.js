@@ -40,15 +40,15 @@ const LanguageButton = () => {
             <div
               className={
                 menu
-                  ? "dropdown-menu dropdown-menu-xs show bg-dark"
-                  : "dropdown-menu dropdown-menu-xs bg-dark"
+                  ? "dropdown-menu dropdown-menu-xs show bg-light"
+                  : "dropdown-menu dropdown-menu-xs bg-light"
               }
               aria-labelledby="dropdownMenuExtraSmall"
             >
-              <a onClick={() => changeLocale("en")} className="dropdown-item">
+              <a onClick={() => changeLocale("en")} className="dropdown-item text-dark">
                 English
               </a>
-              <a onClick={() => changeLocale("fr")} className="dropdown-item">
+              <a onClick={() => changeLocale("fr")} className="dropdown-item text-dark">
                 Français
               </a>
             </div>

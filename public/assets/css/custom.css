@@ -195,7 +195,7 @@ body {
 .scrolltotopbtn {
     position: fixed;
     bottom: 50px;
-    right: 50px;
+    right: 30px;
     z-index: 100;
 }
 
@@ -284,4 +284,10 @@ AddButton:hover
 }
 }
 
+svg {
+    pointer-events: none;
+  }
 
+.DisabledPointer{
+    pointer-events: none;
+}

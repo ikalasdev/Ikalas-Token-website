@@ -54,9 +54,9 @@ const Navbar = () => {
 
       
       <div className='mx-5 position-absolute end-0 d-flex justify-content-center align-items-center'>
-        <ThemeButton />
         <LanguageButton />
-        <Login/>
+        <ThemeButton />
+        {/* <Login /> */}
       </div>
     </nav>
   );

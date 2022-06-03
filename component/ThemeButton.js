@@ -11,7 +11,7 @@ const ThemeButton = () => {
       };
 
     return (
-        <button className="btn btn-xs" onClick={toggleTheme}>
+        <button className="btn btn-xs pt-2" onClick={toggleTheme}>
             <i className="fe fe-moon font-size-lg"></i>
         </button>
     );
