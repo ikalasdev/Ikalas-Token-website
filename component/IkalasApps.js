@@ -51,10 +51,10 @@ const IkalasApps = () => {
 
     return (
         <>
-            <div style={{width:"80%"}} className="mx-auto mt-14">
+            <div style={{width:"80%"}} className="mx-auto mt-14" >
                 <Slider {...settings}>
                     <div>
-                        <a href="https://ikalas.com/app/bsc-token-multisender" target="_blank" rel="noreferrer" style={{textDecoration: "none"}}>
+                        <a href="https://ikalas.com/app/bsc-token-multisender" draggable="false" target="_blank" rel="noreferrer" style={{textDecoration: "none"}}>
                         <div className="card rounded-4" style={{ backgroundColor: "#7C69EF", height:"370px", width:'95%', margin:"auto" }}>
 
                             <h2 className="card-title pt-8">
@@ -72,7 +72,7 @@ const IkalasApps = () => {
                         </a>
                     </div>
                     <div>
-                    <a href="https://ikalas.com/app/matic-token-multisender" target="_blank" rel="noreferrer" style={{textDecoration: "none"}}>
+                    <a href="https://ikalas.com/app/matic-token-multisender" draggable="false" target="_blank" rel="noreferrer" style={{textDecoration: "none"}}>
                         <div className="card rounded-4" style={{ backgroundColor: "#7C69EF", height: "370px", width:'95%', margin:"auto" }}>
 
                             <h2 className="card-title pt-8">
@@ -90,7 +90,7 @@ const IkalasApps = () => {
                         </a>
                     </div>
                     <div >
-                    <a href="https://ikalas.com/app/bsc-batch-wallet-generator" target="_blank" rel="noreferrer" style={{textDecoration: "none"}}>
+                    <a href="https://ikalas.com/app/bsc-batch-wallet-generator" draggable="false" target="_blank" rel="noreferrer" style={{textDecoration: "none"}}>
                         <div className="card rounded-4" style={{ backgroundColor: "#7C69EF", height:"370px", width:'95%', margin:"auto" }}>
 
                             <h2 className="card-title pt-8">
@@ -108,7 +108,7 @@ const IkalasApps = () => {
                         </a>
                     </div>
                     <div>
-                    <a href="https://ikalas.com/app/eth-token-multisender" target="_blank" rel="noreferrer" style={{textDecoration: "none"}}>
+                    <a href="https://ikalas.com/app/eth-token-multisender" draggable="false" target="_blank" rel="noreferrer" style={{textDecoration: "none"}}>
                         <div className="card rounded-4" style={{ backgroundColor: "#7C69EF", height: "370px", width:'95%', margin:"auto" }}>
 
                             <h2 className="card-title pt-8">
@@ -126,7 +126,7 @@ const IkalasApps = () => {
                         </a>
                     </div>
                     <div>
-                    <a href="https://ikalas.com/app/heco-wallet-generator" target="_blank" rel="noreferrer" style={{textDecoration: "none"}}>
+                    <a href="https://ikalas.com/app/heco-wallet-generator" draggable="false" target="_blank" rel="noreferrer" style={{textDecoration: "none"}}>
                         <div className="card rounded-4" style={{ backgroundColor: "#7C69EF", height: "370px", width:'95%', margin:"auto" }}>
 
                             <h2 className="card-title pt-8">
@@ -144,7 +144,7 @@ const IkalasApps = () => {
                         </a>
                     </div>
                     <div >
-                    <a href="https://ikalas.com/app/bep20-faucet" target="_blank" rel="noreferrer" style={{textDecoration: "none"}}>
+                    <a href="https://ikalas.com/app/bep20-faucet" draggable="false" target="_blank" rel="noreferrer" style={{textDecoration: "none"}}>
                         <div className="card rounded-4" style={{ backgroundColor: "#7C69EF", height: "370px", width:'95%', margin:"auto" }}>
 
                             <h2 className="card-title pt-8">
@@ -162,7 +162,7 @@ const IkalasApps = () => {
                         </a>
                     </div>
                     <div>
-                    <a href="https://ikalas.com/app/eth-batch-wallet-generator" target="_blank" rel="noreferrer" style={{textDecoration: "none"}}>
+                    <a href="https://ikalas.com/app/eth-batch-wallet-generator" draggable="false" target="_blank" rel="noreferrer" style={{textDecoration: "none"}}>
                         <div className="card rounded-4" style={{ backgroundColor: "#7C69EF", height: "370px", width:'95%', margin:"auto" }}>
 
                             <h2 className="card-title pt-8">
