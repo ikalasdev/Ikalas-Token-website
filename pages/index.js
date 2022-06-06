@@ -1,10 +1,12 @@
 import Image from 'next/image'
-import React, { PureComponent, useEffect} from 'react';
+import React, { PureComponent, useEffect, useState} from 'react';
 import { data } from '../component/Pie'
 import News from '../component/News'
 import Timeline from '../component/Timeline'
 import AddKIK from '../component/Addkik'
 import IkalasApps from '../component/IkalasApps'
+import CountUp from 'react-countup';
+
 
 
 import dynamic from "next/dynamic";
@@ -20,10 +22,32 @@ const MyResponsivePie = dynamic(() => import('../component/Pie'), { ssr: false }
 
 export default function Home() {
 
+    const [nbholder, setNbholder] = useState(0);
+    const [nbtransaction, setNbtransaction] = useState(0);
+    const [price, setPrice] = useState(0);
+    let ApiKey = process.env.NEXT_PUBLIC_API_KEY;
 
-    const nbholder = 1.1;
-    const nbtransaction = 1.3;
-    const tokenPrice = 0.00;
+    useEffect(() => {
+        fetch('https://ikalas.com/api/v1/kik_stats',
+        {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'ApiKey': ApiKey
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            setNbholder(data.output.result.holders);
+            setNbtransaction(data.output.result.transactions);
+            setPrice(data.output.result.price);
+        })
+        .catch(error => {
+            console.log(error)
+        })
+    }, [])
+    
+
 
     function getCookie(cookieName) {
         let cookie = {};
@@ -56,7 +80,6 @@ export default function Home() {
 
     }
     
-
 
     return (
         <>
@@ -210,8 +233,13 @@ export default function Home() {
 
                                     <div className="d-flex justify-content-between MobColumn" >
                                         <div>
+                                            
                                             <h1 className="fw-bold mb-0">
-                                                <span data-countup="{&quot;startVal&quot;: 0}" data-to={nbholder} data-aos="" data-aos-id="countup:in" className="aos-init aos-animate">{nbholder}</span>K
+                                                <CountUp start={0} end={nbholder} duration={1}>
+                                                    {({ countUpRef }) => (
+                                                        <span ref={countUpRef} />
+                                                    )}
+                                                </CountUp>
                                             </h1>
                                             <p className="mb-0">
                                                 {_tr("Label1")}
@@ -219,7 +247,11 @@ export default function Home() {
                                         </div>
                                         <div className="">
                                             <h1 className="fw-bold mb-0">
-                                                <span data-countup="{&quot;startVal&quot;: 0}" data-to={nbtransaction} data-aos="" data-aos-id="countup:in" className="aos-init aos-animate">{nbtransaction}</span>K
+                                                <CountUp start={0} end={nbtransaction} duration={1}>
+                                                    {({ countUpRef }) => (
+                                                        <span ref={countUpRef} />
+                                                    )}
+                                                </CountUp>
                                             </h1>
                                             <p className="mb-0">
                                                 {_tr("Label2")}
@@ -227,7 +259,11 @@ export default function Home() {
                                         </div>
                                         <div className="text-center">
                                             <h1 className="fw-bold mb-0">
-                                                <span data-countup="{&quot;startVal&quot;: &quot;0&quot;}" data-to={tokenPrice} data-aos="" data-aos-id="countup:in" className="aos-init aos-animate">{tokenPrice}</span>$
+                                            <CountUp start={0} end={price} duration={1}>
+                                                    {({ countUpRef }) => (
+                                                        <span ref={countUpRef} />
+                                                    )}
+                                                </CountUp>$
                                             </h1>
                                             <p className="mb-0">
                                                 {_tr("Label3")}
