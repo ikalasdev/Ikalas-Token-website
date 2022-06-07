@@ -93,7 +93,11 @@
     "ButtonAddKIK" : "Ajouter KIK à Metamask",
     "ErrorAddKIK" : "Une erreur est survenue, êtes-vous sur d'avoir l'extension metamask?",
 
-    "FooterText": "Ikalas vous propose des applications pour gagner en efficacité."
+    "FooterText": "Ikalas vous propose des applications pour gagner en efficacité.",
+
+    "NewsletterTitle": "Inscrivez-vous à la newsletter",
+    "NewsletterText": "Recevez les dernières nouvelles de Ikalas.",
+    "NewsletterButton": "S'inscrire"
     
 
 }

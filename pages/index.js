@@ -6,8 +6,9 @@ import Timeline from '../component/Timeline'
 import AddKIK from '../component/Addkik'
 import IkalasApps from '../component/IkalasApps'
 import CountUp from 'react-countup';
-
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import showToast from '../utils/showToast';
 
 import dynamic from "next/dynamic";
 import { _tr } from "../services/translate"
@@ -18,6 +19,7 @@ import Addkik from '../component/Addkik';
 
 
 const MyResponsivePie = dynamic(() => import('../component/Pie'), { ssr: false })
+
 
 
 export default function Home() {
@@ -38,6 +40,7 @@ export default function Home() {
         })
         .then(response => response.json())
         .then(data => {
+            console.log(data)
             setNbholder(data.output.result.holders);
             setNbtransaction(data.output.result.transactions);
             setPrice(data.output.result.price);
@@ -47,7 +50,6 @@ export default function Home() {
         })
     }, [])
     
-
 
     function getCookie(cookieName) {
         let cookie = {};
@@ -79,7 +81,38 @@ export default function Home() {
         }
 
     }
-    
+
+    function RegisterNewletter()
+    {
+        let email = document.getElementById("Email").value;
+        
+        fetch("https://ikalas.com/api/v1/registertonewsletter", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "ApiKey": process.env.NEXT_PUBLIC_API_KEY
+                },
+                body: 
+                JSON.stringify({
+                    "email": email
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.output.result == "true")
+                {
+                    showToast("success", "You have been registered to waitlist!");
+                }
+                else
+                {
+                    showToast("error", "Wrong email!");
+                }
+            })
+            .catch(error => {
+                showToast("error", "Something went wrong!");
+            });
+    }
+
 
     return (
         <>
@@ -372,9 +405,24 @@ export default function Home() {
                         </div>
                     </section>
 
-                    <section className="py-12 pt-md-10 bg-white text-center" id="News">
+                    <section className="py-12 pt-md-10 bg-white text-center" id="">
                         <div className="container">
                             <Addkik />
+                        </div>
+                    </section>
+
+                    <section className="py-12 pt-md-10 bg-white" id="">
+                        <div className='text-center'>
+                            <h2 className='display-4 fw-bold'>{_tr("NewsletterTitle")}</h2>
+                            <p className="text-muted lead mb-6">{_tr("NewsletterText")}</p>
+                            <ToastContainer />
+                        </div>
+                        <div style={{width:"70%"}} className="mx-auto">
+                            <div className="form-group">
+                                <label>Email</label>
+                                <input type="email" className="form-control" id="Email" placeholder="Enter your email" />
+                            </div>
+                            <button className="btn btn-primary mt-4" onClick={RegisterNewletter}>{_tr("NewsletterButton")}</button>
                         </div>
                     </section>
 

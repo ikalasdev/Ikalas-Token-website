@@ -98,6 +98,10 @@
     "ButtonAddKIK" : "Add KIK to metamask",
     "ErrorAddKIK" : "An error occurred. Are you sure you have the metamask extension?",
 
-    "FooterText": "Ikalas offers you apps to get more efficient."
+    "FooterText": "Ikalas offers you apps to get more efficient.",
+
+    "NewsletterTitle": "Subscribe to our newsletter",
+    "NewsletterText": "Subscribe to our newsletter to get the latest news and updates.",
+    "NewsletterButton": "Subscribe"
 }
   

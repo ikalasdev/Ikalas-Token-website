@@ -6,6 +6,7 @@ import Header from '../component/Header'
 import Link from 'next/link'
 import { ThemeProvider } from 'next-themes'
 
+
 import { ThirdwebWeb3Provider } from "@3rdweb/hooks";
 
 
@@ -14,6 +15,7 @@ import "../public/assets/css/custom.css";
 import "../public/assets/css/override.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
 
 
 function MyApp({ Component, pageProps }) {
