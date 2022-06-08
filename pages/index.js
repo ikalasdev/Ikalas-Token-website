@@ -39,12 +39,7 @@ export const getStaticProps = async () => {
         }
     }
     return fetchData();
-
 }
-
-
-
-
 
 
 
@@ -80,36 +75,26 @@ export default function Home({ stats }) {
 
     }
 
-    function CallNewsletterRequest() {
+    async function CallNewsletterRequest() {
         let email = document.getElementById("Email").value;
-        SendEmail(email);
-    }
-
-    function SendEmail(email) {
-
-        fetch("https://ikalas.com/api/v1/registertonewsletter", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-                "ApiKey": process.env.NEXT_PUBLIC_API_KEY
-            },
-            body:
-                JSON.stringify({
-                    "email": email
-                })
-        })
-            .then(response => response.json())
+        fetch('api/NewsletterRegister', {
+            method: 'POST',
+            body: JSON.stringify({ email: email }),
+        }).then(res => res.json())
             .then(data => {
-                if (data.output.result == "true") {
-                    showToast("success", "You have been registered to waitlist!");
+                if (data.output === true) {
+                    showToast("success", _tr("NewsletterSuccess"));
+                } 
+                if(data.output === false){
+                    showToast("error", _tr("NewsletterWrongEmail"));
                 }
-                else {
-                    showToast("error", "Wrong email!");
+                if(data.output === "error"){
+                    showToast("error", _tr("NewsletterError"));
                 }
+                
             })
-            .catch(error => {
-                showToast("error", "Something went wrong!");
-            });
+                
+            
     }
 
 

@@ -102,6 +102,9 @@
 
     "NewsletterTitle": "Subscribe to our newsletter",
     "NewsletterText": "Subscribe to our newsletter to get the latest news and updates.",
-    "NewsletterButton": "Subscribe"
+    "NewsletterButton": "Subscribe",
+    "NewsletterError": "An error occurred. Please try again later.",
+    "NewsletterWrongEmail": "Please enter a valid email address.",
+    "NewsletterSuccess": "You have been successfully subscribed to our newsletter."
 }
   

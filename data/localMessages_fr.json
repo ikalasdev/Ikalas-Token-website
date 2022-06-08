@@ -97,7 +97,10 @@
 
     "NewsletterTitle": "Inscrivez-vous à la newsletter",
     "NewsletterText": "Recevez les dernières nouvelles de Ikalas.",
-    "NewsletterButton": "S'inscrire"
+    "NewsletterButton": "S'inscrire",
+    "NewsletterError": "Une erreur est survenue, veuillez réessayer.",
+    "NewsletterWrongEmail": "Veuillez entrer une adresse email valide.",
+    "NewsletterSuccess": "Vous êtes inscrit à la newsletter."
     
 
 }
