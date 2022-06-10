@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import React, { PureComponent, useEffect, useState } from 'react';
-import { data } from '../component/Pie'
 import News from '../component/News'
 import Timeline from '../component/Timeline'
 import AddKIK from '../component/Addkik'
@@ -45,6 +44,27 @@ export const getStaticProps = async () => {
 
 export default function Home({ stats }) {
 
+      const Graphdata = [
+        {
+          id: "Foundation",
+          label: "Ikalas Foundation",
+          value: stats.graph.foundation,
+          color: "hsl(257,47%,57%)",
+        },
+        {
+          id: "Insiders",
+          label: "Ikalas employees",
+          value: stats.graph.insiders,
+          color: "hsl(226,64,47)",
+        },
+      
+        {
+          id: "Community",
+          label: "Community",
+          value: stats.graph.community,
+          color: "hsl(223,48,20)",
+        },
+      ];
 
     function getCookie(cookieName) {
         let cookie = {};
@@ -294,10 +314,35 @@ export default function Home({ stats }) {
                             <p className="text-muted lead mb-6">
                                 {_tr("DistributionText1")}
                             </p>
-                            <div className='d-flex justify-content-center'>
+                            <div className='container d-flex MobGraph'>
                                 <div className="divchart" data-aos="zoom-in">
-                                    <MyResponsivePie data={data} />
+                                    <MyResponsivePie data={Graphdata}/>
                                 </div>
+                                <div className="divchart d-flex justify-content-center flex-column MobGraphStats" data-aos="zoom-in">
+                                    <div style={{borderBottom: "1px solid #3F71FF"}} className="d-flex justify-content-between py-3">
+                                        <span className="fw-bold" style={{fontSize:"21px"}}>{_tr("Community")}</span>
+                                        <div className="d-flex">
+                                            <div style={{background:"#00A6F9", width:"30px", height:"25px"}} className="rounded mx-3"></div>
+                                            <span className="fw-bold" style={{color:"#7C69EF"}}>{stats.graph.community}%</span>
+                                        </div>
+                                    </div>
+
+                                    <div style={{borderBottom: "1px solid #3F71FF"}} className="d-flex justify-content-between py-3">
+                                        <span className="fw-bold" style={{fontSize:"21px"}}>{_tr("Foundation")}</span>
+                                        <div className="d-flex">
+                                            <div style={{background:"#6414F9", width:"30px", height:"25px"}} className="rounded mx-3"></div>
+                                            <span className="fw-bold" style={{color:"#7C69EF"}}>{stats.graph.foundation}%</span>
+                                        </div>
+                                    </div>
+
+                                    <div className="d-flex justify-content-between py-3">
+                                        <span className="fw-bold" style={{fontSize:"21px"}}>{_tr("Insiders")}</span>
+                                        <div className="d-flex">
+                                            <div style={{background:"#7438BE", width:"30px", height:"25px"}} className="rounded mx-3"></div>
+                                            <span className="fw-bold" style={{color:"#7C69EF"}}>{stats.graph.insiders}%</span>
+                                        </div>
+                                    </div>
+                               </div> 
                             </div>
                         </div>
                     </section>

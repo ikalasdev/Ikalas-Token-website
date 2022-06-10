@@ -83,6 +83,14 @@ body {
     .MobDnoneImg {
         display: none;
     }
+    .MobGraph
+    {
+        flex-direction: column;
+    }
+    .MobGraphStats
+    {
+        justify-content: flex-start !important;
+    }
 
 
 }
